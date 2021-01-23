@@ -1,4 +1,4 @@
-// gulpプラグインを読み込みます
+// gulpプラグイン読み込み
 const { src, dest, watch } = require("gulp");
 // Sassをコンパイルするプラグイン
 const sass = require("gulp-sass");
@@ -21,7 +21,7 @@ const compileSass = () =>
     // cssフォルダー以下に保存
     .pipe(dest("./css"));
 
-// Sassファイルを監視し、変更があったらscssファイルを変換します
+// Sassファイルを監視し、変更があったらscssファイルを変換
 const watchSassFiles = () => watch("./scss/**/*.scss", compileSass);
 
 // npx gulpというコマンドを実行した時、watchSassFilesが実行
