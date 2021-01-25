@@ -25,7 +25,8 @@ img {
 
 body {
   line-height: 1.5;
-  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans", "Noto Sans CJK JP", "NotoSansCJKjp-Jxck", sans-serif;
   font-size: 16px;
   color: #333333;
+  background: url("../images/back.jpg");
 }
