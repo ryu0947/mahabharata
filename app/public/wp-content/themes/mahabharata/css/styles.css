@@ -1,19 +1,41 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  appearance: none;
+  padding: 0;
 }
 
 img {
