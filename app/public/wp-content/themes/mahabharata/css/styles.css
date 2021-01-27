@@ -57,3 +57,8 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.section {
+  text-align: center;
+  margin-bottom: 60px;
+}
