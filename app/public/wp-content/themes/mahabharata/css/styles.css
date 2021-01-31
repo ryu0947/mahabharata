@@ -95,6 +95,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 60vh;
 }
 
 .fv::before {
@@ -122,6 +123,22 @@ body {
   font-family: "Noto Serif JP", serif;
 }
 
+@media (min-width: 768px) {
+  .fv__desc {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fv__desc {
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
 .fv__title {
   font-size: 34px;
   color: #ffffff;
@@ -129,10 +146,24 @@ body {
 }
 
 @media (min-width: 768px) {
+  .fv__title {
+    font-size: 70px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fv__title {
+    font-size: 92px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
   .fv__flex {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -143,14 +174,31 @@ body {
 @media (min-width: 768px) {
   .fv__row {
     width: 42%;
+    padding: 0 15px;
   }
 }
 
 .fv__info {
-  font-size: 22px;
+  font-size: 24px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Noto Serif JP", serif;
+}
+
+@media (min-width: 768px) {
+  .fv__info {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fv__info {
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 400;
+  }
 }
 
 .fv__text {
@@ -160,7 +208,7 @@ body {
 
 .fv__btn {
   position: absolute;
-  top: 95%;
+  top: 97%;
   left: 48%;
   background: #c63205;
   width: 180px;
@@ -170,9 +218,21 @@ body {
   font-size: 12px;
   font-weight: 700;
   user-select: none;
-  transition: opacity 0.3s;
+  transition: opacity 0.4s;
 }
 
 .fv__btn:hover {
   opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .fv__btn {
+    left: 67%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fv__btn {
+    left: 74%;
+  }
 }
