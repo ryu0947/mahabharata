@@ -46,11 +46,29 @@ img {
 }
 
 .nav__list {
-  display: flex;
+  display: block;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .nav__item {
-  display: block;
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.nav__item .en {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav__item .en {
+    display: block;
+  }
 }
 
 body {
