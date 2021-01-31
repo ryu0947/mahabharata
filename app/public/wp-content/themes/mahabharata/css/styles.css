@@ -145,7 +145,7 @@ img {
 .fv__inner {
   position: relative;
   text-align: center;
-  padding: 40px 15px;
+  padding: 40px 0;
   z-index: 1;
 }
 
@@ -242,7 +242,7 @@ img {
 
 @media (min-width: 768px) {
   .fv__info {
-    font-size: 28px;
+    font-size: 30px;
     color: #ffffff;
     font-weight: 400;
   }
@@ -289,13 +289,13 @@ img {
 
 @media (min-width: 768px) {
   .fv__btn {
-    left: 67%;
+    left: 69%;
   }
 }
 
 @media (min-width: 1024px) {
   .fv__btn {
-    left: 74%;
+    left: 70%;
   }
 }
 
