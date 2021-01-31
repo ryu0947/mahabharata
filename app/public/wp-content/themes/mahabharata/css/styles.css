@@ -92,6 +92,9 @@ body {
 .fv {
   position: relative;
   background: url("../images/header.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fv::before {
@@ -116,24 +119,38 @@ body {
   font-size: 12px;
   color: #ffffff;
   font-weight: 400;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 .fv__title {
   font-size: 34px;
   color: #ffffff;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
+}
+
+@media (min-width: 768px) {
+  .fv__flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
 }
 
 .fv__row {
   margin-top: 24px;
 }
 
+@media (min-width: 768px) {
+  .fv__row {
+    width: 42%;
+  }
+}
+
 .fv__info {
   font-size: 22px;
   color: #ffffff;
   font-weight: 400;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 .fv__text {
