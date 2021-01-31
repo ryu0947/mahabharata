@@ -117,10 +117,18 @@ body {
 }
 
 .fv__desc {
-  font-size: 12px;
+  font-size: 10px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Noto Serif JP", serif;
+}
+
+@media (min-width: 360px) {
+  .fv__desc {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 400;
+  }
 }
 
 @media (min-width: 768px) {
@@ -140,9 +148,16 @@ body {
 }
 
 .fv__title {
-  font-size: 34px;
+  font-size: 28px;
   color: #ffffff;
   font-family: "Noto Serif JP", serif;
+}
+
+@media (min-width: 360px) {
+  .fv__title {
+    font-size: 34px;
+    color: #ffffff;
+  }
 }
 
 @media (min-width: 768px) {
@@ -179,10 +194,18 @@ body {
 }
 
 .fv__info {
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Noto Serif JP", serif;
+}
+
+@media (min-width: 360px) {
+  .fv__info {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+  }
 }
 
 @media (min-width: 768px) {
@@ -208,8 +231,8 @@ body {
 
 .fv__btn {
   position: absolute;
-  top: 97%;
-  left: 48%;
+  top: 95%;
+  left: 38%;
   background: #c63205;
   width: 180px;
   height: 40px;
@@ -223,6 +246,13 @@ body {
 
 .fv__btn:hover {
   opacity: 0.8;
+}
+
+@media (min-width: 360px) {
+  .fv__btn {
+    top: 97%;
+    left: 48%;
+  }
 }
 
 @media (min-width: 768px) {
