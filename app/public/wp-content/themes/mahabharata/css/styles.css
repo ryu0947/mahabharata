@@ -63,6 +63,10 @@ body {
   margin-bottom: 60px;
 }
 
+.header {
+  margin-bottom: 60px;
+}
+
 .nav__list {
   display: block;
   white-space: nowrap;
@@ -199,7 +203,7 @@ body {
 }
 
 .fv__row {
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {
@@ -281,4 +285,41 @@ body {
   .fv__btn {
     left: 74%;
   }
+}
+
+.introduction {
+  background: rgba(255, 255, 255, 0.3) url(../images/intro.png) no-repeat left top/210px;
+}
+
+.introduction__inner {
+  padding: 48px;
+}
+
+.introduction__title {
+  font-size: 34px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.introduction__lead {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.introduction__column {
+  columns: 2;
+  column-gap: 2em;
+  text-align: justify;
+}
+
+.introduction__text {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.introduction__text:not(:first-child) {
+  margin-top: 1em;
 }
