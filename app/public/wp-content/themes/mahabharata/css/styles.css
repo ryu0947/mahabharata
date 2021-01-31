@@ -45,6 +45,24 @@ img {
   vertical-align: bottom;
 }
 
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background: url("../images/back.jpg");
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .nav__list {
   display: block;
   white-space: nowrap;
@@ -69,22 +87,4 @@ img {
   .nav__item .en {
     display: block;
   }
-}
-
-body {
-  line-height: 1.5;
-  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  background: url("../images/back.jpg");
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.section {
-  text-align: center;
-  margin-bottom: 60px;
 }
