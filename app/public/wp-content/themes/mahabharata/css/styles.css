@@ -20,7 +20,13 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1000px;
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
   }
 }
 
@@ -97,7 +103,7 @@ img {
   font-weight: 700;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1140px) {
   .nav__item {
     font-size: 12px;
     color: #333333;
@@ -109,7 +115,7 @@ img {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1140px) {
   .nav__item .en {
     display: block;
     font-size: 24px;
@@ -295,35 +301,74 @@ img {
 
 @media (min-width: 1024px) {
   .fv__btn {
-    left: 70%;
+    left: 75%;
   }
 }
 
 .introduction {
-  background: rgba(255, 255, 255, 0.3) url(../images/intro.png) no-repeat left top/210px;
+  background: rgba(255, 255, 255, 0.3) url(../images/intro.png) no-repeat left top/30%;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    background-size: 210px;
+  }
 }
 
 .introduction__inner {
-  padding: 48px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .introduction__inner {
+    padding: 48px;
+  }
 }
 
 .introduction__title {
-  font-size: 34px;
+  font-size: 24px;
   color: #333333;
   margin-bottom: 16px;
 }
 
+@media (min-width: 768px) {
+  .introduction__title {
+    font-size: 34px;
+    color: #333333;
+  }
+}
+
 .introduction__lead {
-  font-size: 24px;
+  font-size: 15px;
   color: #333333;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 360px) {
+  .introduction__lead {
+    font-size: 18px;
+    color: #333333;
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction__lead {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 30px;
+  }
 }
 
 .introduction__column {
-  columns: 2;
-  column-gap: 2em;
   text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .introduction__column {
+    columns: 2;
+    column-gap: 2em;
+  }
 }
 
 .introduction__text {
