@@ -509,11 +509,35 @@ img {
   font-size: 34px;
   color: #ffffff;
   margin-bottom: 20px;
-  padding-top: 30px;
+}
+
+.story__inner {
+  padding: 30px 0 50px;
+}
+
+.story__text-area {
+  margin-left: 50%;
+  text-align: justify;
 }
 
 .story__text {
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
+}
+
+.story__btn {
+  background: #c63205;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  user-select: none;
+  transition: background-color 0.4s;
+}
+
+.story__btn:hover {
+  background: rgba(198, 50, 5, 0.8);
 }
