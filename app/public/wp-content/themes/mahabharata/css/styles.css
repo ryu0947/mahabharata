@@ -228,11 +228,18 @@ img {
   }
 }
 
+@media (min-width: 1140px) {
+  .fv__title {
+    font-size: 98px;
+    color: #ffffff;
+  }
+}
+
 @media (min-width: 768px) {
   .fv__flex {
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -247,7 +254,7 @@ img {
 }
 
 .fv__info {
-  font-size: 20px;
+  font-size: 24px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Noto Serif JP", serif;
@@ -255,15 +262,7 @@ img {
 
 @media (min-width: 360px) {
   .fv__info {
-    font-size: 24px;
-    color: #ffffff;
-    font-weight: 400;
-  }
-}
-
-@media (min-width: 768px) {
-  .fv__info {
-    font-size: 30px;
+    font-size: 28px;
     color: #ffffff;
     font-weight: 400;
   }
@@ -271,7 +270,7 @@ img {
 
 @media (min-width: 1024px) {
   .fv__info {
-    font-size: 34px;
+    font-size: 40px;
     color: #ffffff;
     font-weight: 400;
   }
