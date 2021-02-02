@@ -500,3 +500,7 @@ img {
 .introduction__text:not(:first-child) {
   margin-top: 1em;
 }
+
+.story {
+  background: url("../images/story.jpg") no-repeat center/cover;
+}
