@@ -282,9 +282,7 @@ img {
 }
 
 .fv__btn {
-  position: absolute;
-  top: 95%;
-  left: 38%;
+  transform: translateY(-50%);
   background: #c63205;
   width: 180px;
   height: 40px;
@@ -298,25 +296,6 @@ img {
 
 .fv__btn:hover {
   background: rgba(198, 50, 5, 0.8);
-}
-
-@media (min-width: 360px) {
-  .fv__btn {
-    top: 97%;
-    left: 48%;
-  }
-}
-
-@media (min-width: 768px) {
-  .fv__btn {
-    left: 69%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .fv__btn {
-    left: 75%;
-  }
 }
 
 .news {
