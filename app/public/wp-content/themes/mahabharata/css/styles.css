@@ -403,16 +403,16 @@ img {
   transition: background-color 0.4s;
 }
 
+.news__btn:hover {
+  background: rgba(198, 50, 5, 0.8);
+}
+
 @media (min-width: 768px) {
   .news__btn {
     position: absolute;
     top: 0;
     right: 0;
   }
-}
-
-.news__btn:hover {
-  background: rgba(198, 50, 5, 0.8);
 }
 
 .introduction {
