@@ -125,7 +125,7 @@ img {
 }
 
 .nav__item:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .fv {
@@ -316,53 +316,70 @@ img {
 }
 
 .news__list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 -15px;
 }
 
+@media (min-width: 768px) {
+  .news__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .news__item {
-  max-width: 33.333333%;
   margin-bottom: 30px;
+  transition: opacity 0.4s;
 }
 
 @media (min-width: 768px) {
   .news__item {
+    max-width: 33.333333%;
     padding: 0 15px;
   }
-}
-
-@media (min-width: 1024px) {
-  .news__item {
-    width: 100%;
+  .news__item:hover {
+    opacity: 0.8;
   }
 }
 
 .news__item-inner {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.top .news__item:nth-child(4),
-.top .news__item:nth-child(5) {
-  max-width: 50%;
+@media (min-width: 768px) {
+  .news__item-inner {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.top .news__item:nth-child(4) .news__item-inner,
-.top .news__item:nth-child(5) .news__item-inner {
-  flex-direction: row;
+@media (min-width: 768px) {
+  .top .news__item:nth-child(4),
+  .top .news__item:nth-child(5) {
+    max-width: 50%;
+  }
 }
 
-.top .news__item:nth-child(4) .news__item-inner .news__img,
-.top .news__item:nth-child(5) .news__item-inner .news__img {
-  width: 42%;
+@media (min-width: 768px) {
+  .top .news__item:nth-child(4) .news__item-inner,
+  .top .news__item:nth-child(5) .news__item-inner {
+    flex-direction: row;
+  }
 }
 
-.top .news__item:nth-child(4) .news__item-inner .news__content,
-.top .news__item:nth-child(5) .news__item-inner .news__content {
-  width: 58%;
+@media (min-width: 768px) {
+  .top .news__item:nth-child(4) .news__item-inner .news__img,
+  .top .news__item:nth-child(5) .news__item-inner .news__img {
+    width: 42%;
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .top .news__item:nth-child(4) .news__item-inner .news__content,
+  .top .news__item:nth-child(5) .news__item-inner .news__content {
+    width: 58%;
+  }
 }
 
 .news__content {
@@ -385,9 +402,6 @@ img {
 }
 
 .news__btn {
-  position: absolute;
-  top: 0;
-  right: 0;
   background: #c63205;
   width: 120px;
   height: 40px;
@@ -397,6 +411,14 @@ img {
   font-weight: 700;
   user-select: none;
   transition: background-color 0.4s;
+}
+
+@media (min-width: 768px) {
+  .news__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .news__btn:hover {
