@@ -590,6 +590,34 @@ img {
   }
 }
 
+.schedule__inner {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+}
+
+.schedule__title {
+  font-size: 34px;
+  color: #333333;
+}
+
+.schedule__item {
+  margin-bottom: 20px;
+}
+
+.schedule__day {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.schedule__time, .schedule__location {
+  margin-right: 20px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: 700;
+}
+
 .introduction {
   background: rgba(255, 255, 255, 0.3) url(../images/intro.png) no-repeat left top/30%;
 }
