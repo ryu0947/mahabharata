@@ -103,6 +103,56 @@ img {
   vertical-align: bottom;
 }
 
+.cast__title {
+  font-size: 34px;
+  color: #333333;
+}
+
+.cast__bg {
+  background: #fef9e6;
+  margin-top: 134px;
+}
+
+.cast__list {
+  display: flex;
+  transform: translateY(-15%);
+}
+
+.cast__item {
+  width: 33.3%;
+  padding: 0 15px;
+}
+
+.cast__img {
+  width: 220px;
+  border-radius: 100%;
+}
+
+.cast__item-inner {
+  margin-bottom: 1em;
+}
+
+.cast__info {
+  margin: 1em 0 46px;
+}
+
+.cast__part {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.cast__name {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.cast__text {
+  text-align: justify;
+}
+
 .comments__title {
   font-size: 34px;
   color: #333333;
