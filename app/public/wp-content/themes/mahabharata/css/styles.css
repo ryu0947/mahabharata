@@ -272,6 +272,16 @@ img {
   }
 }
 
+.footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer__inner {
+  padding: 20px;
+}
+
 .header {
   margin-bottom: 60px;
 }
