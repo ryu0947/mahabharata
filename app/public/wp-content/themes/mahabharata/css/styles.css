@@ -598,24 +598,30 @@ img {
 .schedule__title {
   font-size: 34px;
   color: #333333;
+  margin-bottom: 30px;
 }
 
 .schedule__item {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.schedule__day {
-  margin-right: 15px;
-  font-size: 24px;
+.schedule__text {
+  margin-right: 10px;
+  font-size: 18px;
   color: #333333;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.schedule__time, .schedule__location {
+.schedule__text:nth-child(2), .schedule__text:nth-child(3) {
   margin-right: 20px;
-  font-size: 24px;
-  color: #333333;
-  font-weight: 700;
+}
+
+.schedule__text:nth-child(4) {
+  margin-right: 0;
+}
+
+.schedule__link {
+  text-decoration: underline;
 }
 
 .introduction {
