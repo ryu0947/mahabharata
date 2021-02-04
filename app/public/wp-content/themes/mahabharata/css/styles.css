@@ -601,19 +601,40 @@ img {
   margin-bottom: 30px;
 }
 
+.schedule__list {
+  display: inline-block;
+  text-align: center;
+}
+
 .schedule__item {
-  margin-bottom: 15px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .schedule__item {
+    margin-bottom: 15px;
+  }
 }
 
 .schedule__text {
-  margin-right: 10px;
+  display: block;
   font-size: 18px;
   color: #333333;
   font-weight: 400;
 }
 
-.schedule__text:nth-child(2), .schedule__text:nth-child(3) {
-  margin-right: 20px;
+@media (min-width: 768px) {
+  .schedule__text {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .schedule__text:nth-child(2), .schedule__text:nth-child(3) {
+    margin-right: 20px;
+  }
 }
 
 .schedule__text:nth-child(4) {
