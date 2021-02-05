@@ -348,6 +348,11 @@ img {
   z-index: 0;
 }
 
+.fv-child {
+  position: relative;
+  background: url("../images/header.jpg") no-repeat center/cover;
+}
+
 .fv__inner {
   position: relative;
   text-align: center;
