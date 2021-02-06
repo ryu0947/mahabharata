@@ -446,7 +446,7 @@ img {
 
 @media (min-width: 768px) {
   .fv__desc--child {
-    font-size: 24px;
+    font-size: 18px;
     color: #ffffff;
     font-weight: 400;
   }
@@ -454,10 +454,17 @@ img {
 
 @media (min-width: 1024px) {
   .fv__desc--child {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1140px) {
+  .fv__desc--child {
     font-size: 28px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Noto Serif JP", serif;
   }
 }
 
@@ -510,7 +517,14 @@ img {
 
 @media (min-width: 768px) {
   .fv__title--child {
-    font-size: 68px;
+    font-size: 46px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fv__title--child {
+    font-size: 64px;
     color: #ffffff;
   }
 }
@@ -588,9 +602,25 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .fv__info--child {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
 @media (min-width: 1024px) {
   .fv__info--child {
-    font-size: 40px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1140px) {
+  .fv__info--child {
+    font-size: 28px;
     color: #ffffff;
     font-weight: 400;
   }
@@ -660,7 +690,7 @@ img {
 
 @media (min-width: 768px) {
   .fv__lead {
-    margin-left: 60%;
+    margin-left: 50%;
   }
 }
 
