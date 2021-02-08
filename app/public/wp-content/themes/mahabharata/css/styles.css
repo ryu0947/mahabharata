@@ -1033,6 +1033,14 @@ img {
   background: rgba(198, 50, 5, 0.8);
 }
 
-.synopsis__article {
+.synopsis__article--synopsis1 {
   background: url("../images/synopsis1.png") no-repeat center/cover;
+}
+
+.synopsis__article--synopsis2 {
+  background: url("../images/synopsis2.png") no-repeat center/cover;
+}
+
+.synopsis__article--synopsis3 {
+  background: url("../images/synopsis3.png") no-repeat center/cover;
 }
