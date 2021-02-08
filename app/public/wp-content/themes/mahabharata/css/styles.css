@@ -308,6 +308,10 @@ img {
   margin-bottom: 60px;
 }
 
+.header.story {
+  margin-bottom: 0;
+}
+
 .nav__list {
   display: block;
   white-space: nowrap;
@@ -982,8 +986,7 @@ img {
   margin-top: 1em;
 }
 
-.story {
-  position: relative;
+.story__bg {
   background: url("../images/story.jpg") no-repeat center/cover;
 }
 
@@ -1043,4 +1046,9 @@ img {
 
 .synopsis__article--synopsis3 {
   background: url("../images/synopsis3.png") no-repeat center/cover;
+}
+
+.synopsis__left {
+  margin-right: 50%;
+  padding: 60px;
 }
