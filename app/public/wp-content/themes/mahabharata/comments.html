@@ -26,49 +26,47 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#">トップ<span class="en">TOP</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">ニュース<span class="en">NEWS</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">ストーリー<span class="en">STORY</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">著名人コメント<span class="en">COMMENTS</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">キャスト<span class="en">CAST</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">お問い合わせ<span class="en">INQUIRY</span></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="fv">
         <div class="container">
-          <div class="fv__flex">
-            <div class="fv__row">
-              <p class="fv__text">
-                世界最長の叙事詩をピーター・ブルック以来の全編舞台化
-              </p>
-              <h2 class="fv__title">完全版マハーバーラタ</h2>
-            </div>
-            <div class="fv__row">
-              <p class="fv__text">2020年7月4日〜7日</p>
-              <p class="fv__text">なかのZERO大ホール</p>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">トップ<span class="en">TOP</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">ニュース<span class="en">NEWS</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">ストーリー<span class="en">STORY</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">著名人コメント<span class="en">COMMENTS</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">キャスト<span class="en">CAST</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">お問い合わせ<span class="en">INQUIRY</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="fv-child">
+        <div class="container">
+          <div class="fv__inner child">
+            <div class="fv__flex">
+              <div class="fv__row--child">
+                <p class="fv__desc--child">
+                  世界最長の叙事詩をピーター・ブルック以来の全編舞台化
+                </p>
+                <h2 class="fv__title--child">完全版マハーバーラタ</h2>
+              </div>
+              <div class="fv__row--child">
+                <p class="fv__info--child">2020年7月4日〜7日</p>
+                <p class="fv__info--child">なかのZERO大ホール</p>
+              </div>
             </div>
           </div>
-          <div class="fv__flex">
-            <ul class="breadcrumb">
-              <li class="breadcrumb__item">
-                <a href="index.html">ホーム</a><span>&gt;</span>
-              </li>
-              <li class="breadcrumb__item">著名人コメント</li>
-            </ul>
-            <button class="btn__large">
+          <div class="btn-position">
+            <button class="fv__btn--child">
               <a href="#">チケット予約サイトへ</a>
             </button>
           </div>
@@ -76,64 +74,46 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="comments section">
-          <h1 class="comments_title">COMMENTS</h1>
-          <p class="comments_text">
+      <section class="comments section">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="index.html">ホーム</a><span>&gt;</span>
+            </li>
+            <li class="breadcrumb__item">著名人コメント</li>
+          </ul>
+          <h2 class="comments__title">COMMENTS</h2>
+          <p class="comments__caption">
             舞台関係者のみならず各界著名人からコメントが届いています！
           </p>
           <div class="comments__inner">
-            <h3 class="comments__heading">
-              京都佛立ミュージアム館長<br />京都・長松寺/横浜・妙深寺
-              住職<strong>長松清潤</strong>
-            </h3>
-            <p class="comments__text">
-              「文に非ず、其の義に非ず、唯だ一部の意のみ。」<br />
-              まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み<br />
-              出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。<br />
-              仏教の奥義と小池作品が通底して見えるのは何故か。<br />
-              40年に及ぶ創作活動で到達した究極の舞台が普遍の題材により現出されようとしている。<br />
-            </p>
-            <button class="btn__small"><a href="#">もっと見る</a></button>
+            <div class="comments__text-area">
+              <h3 class="comments__heading">
+                京都佛立ミュージアム館長<br />京都・長松寺/横浜・妙深寺<br
+                  class="sp"
+                />住職
+                <strong class="comments__strong">長松清潤</strong>
+              </h3>
+              <p class="comments__text">
+                「文に非ず、其の義に非ず、唯だ一部の意のみ。」<br />
+                まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み<br />
+                出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。<br />
+                仏教の奥義と小池作品が通底して見えるのは何故か。<br />
+                40年に及ぶ創作活動で到達した究極の舞台が普遍の題材により現出されようとしている。<br />
+              </p>
+              <div class="btn-position--comments">
+                <button class="comments__btn">
+                  <a href="#">もっと見る</a>
+                </button>
+              </div>
+            </div>
           </div>
-          <ul class="comments__list">
-            <li class="comments__item">
-              <h3 class="comments__heading">
-                今福龍太
-                <span>文化人類学者</span>
-              </h3>
-              <p class="comments__text">
-                蝶は風を受けて飛ぶ。いやむしろ、風を切って飛ぶ。いやさらにいえば、みずから風を孕み風を生み出す。
-                吹きすさび循環する大風のような物語。小池舞台はそんな物語を生成する未知なる蝶の飛翔だ。
-              </p>
-            </li>
-            <li class="comments__item">
-              <h3 class="comments__heading">
-                今福龍太
-                <span>文化人類学者</span>
-              </h3>
-              <p class="comments__text">
-                蝶は風を受けて飛ぶ。いやむしろ、風を切って飛ぶ。いやさらにいえば、みずから風を孕み風を生み出す。
-                吹きすさび循環する大風のような物語。小池舞台はそんな物語を生成する未知なる蝶の飛翔だ。
-              </p>
-            </li>
-            <li class="comments__item">
-              <h3 class="comments__heading">
-                今福龍太
-                <span>文化人類学者</span>
-              </h3>
-              <p class="comments__text">
-                蝶は風を受けて飛ぶ。いやむしろ、風を切って飛ぶ。いやさらにいえば、みずから風を孕み風を生み出す。
-                吹きすさび循環する大風のような物語。小池舞台はそんな物語を生成する未知なる蝶の飛翔だ。
-              </p>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="container">
-        <section class="schedule section">
+        </div>
+      </section>
+      <section class="schedule section">
+        <div class="container">
           <div class="schedule__inner">
-            <h2 class="schedule__titel">SCHEDULE</h2>
+            <h2 class="schedule__title">SCHEDULE</h2>
             <ul class="schedule__list">
               <li class="schedule__item">
                 <span class="schedule__text">2020.07.04</span>
@@ -178,18 +158,18 @@
             </ul>
           </div>
           <div class="schedule_link-area">
-            <button class="btn__large">
+            <button class="schedule__btn--brown">
               <a href="#">お問い合わせはこちら</a>
             </button>
-            <button class="btn__large--brown">
+            <button class="schedule__btn">
               <a href="#">チケット予約サイトへ</a>
             </button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <div class="container">
-      <footer class="footer">
+    <footer class="footer">
+      <div class="container">
         <div class="footer__inner">
           <div class="copyright">
             <small
@@ -198,7 +178,7 @@
             >
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
