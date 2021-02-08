@@ -1034,5 +1034,5 @@ img {
 }
 
 .synopsis__article {
-  background: url("../images/row1.png");
+  background: url("../images/synopsis1.png") no-repeat center/cover;
 }
