@@ -72,7 +72,10 @@ h5,
 h6,
 p,
 ul,
-li {
+li,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -1296,4 +1299,9 @@ textarea {
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
+}
+
+.inquiry__inner {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 48px;
 }
