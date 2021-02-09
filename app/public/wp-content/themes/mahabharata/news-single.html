@@ -26,49 +26,47 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#">トップ<span class="en">TOP</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">ニュース<span class="en">NEWS</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">ストーリー<span class="en">STORY</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">著名人コメント<span class="en">COMMENTS</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">キャスト<span class="en">CAST</span></a>
-          </li>
-          <li class="nav__item">
-            <a href="#">お問い合わせ<span class="en">INQUIRY</span></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="fv">
         <div class="container">
-          <div class="fv__flex">
-            <div class="fv__row">
-              <p class="fv__text">
-                世界最長の叙事詩をピーター・ブルック以来の全編舞台化
-              </p>
-              <h2 class="fv__title">完全版マハーバーラタ</h2>
-            </div>
-            <div class="fv__row">
-              <p class="fv__text">2020年7月4日〜7日</p>
-              <p class="fv__text">なかのZERO大ホール</p>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">トップ<span class="en">TOP</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">ニュース<span class="en">NEWS</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">ストーリー<span class="en">STORY</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">著名人コメント<span class="en">COMMENTS</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">キャスト<span class="en">CAST</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#">お問い合わせ<span class="en">INQUIRY</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="fv-child">
+        <div class="container">
+          <div class="fv__inner child">
+            <div class="fv__flex">
+              <div class="fv__row--child">
+                <p class="fv__desc--child">
+                  世界最長の叙事詩をピーター・ブルック以来の全編舞台化
+                </p>
+                <h2 class="fv__title--child">完全版マハーバーラタ</h2>
+              </div>
+              <div class="fv__row--child">
+                <p class="fv__info--child">2020年7月4日〜7日</p>
+                <p class="fv__info--child">なかのZERO大ホール</p>
+              </div>
             </div>
           </div>
-          <div class="fv__flex">
-            <ul class="breadcrumb">
-              <li class="breadcrumb__item">
-                <a href="index.html">ホーム</a><span>&gt;</span>
-              </li>
-              <li class="breadcrumb__item">NEWS</li>
-            </ul>
-            <button class="btn__large">
+          <div class="btn-position">
+            <button class="fv__btn--child">
               <a href="#">チケット予約サイトへ</a>
             </button>
           </div>
@@ -76,9 +74,9 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="news-article section">
-          <h1 class="news-article__title">NEWS</h1>
+      <section class="news-article section">
+        <div class="container">
+          <h1 class="news__title">NEWS</h1>
           <article class="news-article__inner">
             <div class="news-article__img">
               <img
@@ -87,12 +85,10 @@
               />
             </div>
             <div class="news-article__head">
-              <div class="news-article__head-inner">
-                <time>2019.9.30</time>
-                <h3 class="news-article__head-title">
-                  完全版マハーバーラタ 2020年7月・東京公演！！
-                </h3>
-              </div>
+              <time>2019.9.30</time>
+              <h3 class="news-article__head-title">
+                完全版マハーバーラタ 2020年7月・東京公演！！
+              </h3>
             </div>
             <div class="news-article__body">
               <div class="news-article__body-inner">
@@ -150,12 +146,12 @@
               </div>
             </div>
           </div>
-        </section>
-      </div>
-      <div class="container">
-        <section class="schedule section">
+        </div>
+      </section>
+      <section class="schedule section">
+        <div class="container">
           <div class="schedule__inner">
-            <h2 class="schedule__titel">SCHEDULE</h2>
+            <h2 class="schedule__title">SCHEDULE</h2>
             <ul class="schedule__list">
               <li class="schedule__item">
                 <span class="schedule__text">2020.07.04</span>
@@ -200,18 +196,18 @@
             </ul>
           </div>
           <div class="schedule_link-area">
-            <button class="btn__large">
+            <button class="schedule__btn--brown">
               <a href="#">お問い合わせはこちら</a>
             </button>
-            <button class="btn__large--brown">
+            <button class="schedule__btn">
               <a href="#">チケット予約サイトへ</a>
             </button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <div class="container">
-      <footer class="footer">
+    <footer class="footer">
+      <div class="container">
         <div class="footer__inner">
           <div class="copyright">
             <small
@@ -220,7 +216,7 @@
             >
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

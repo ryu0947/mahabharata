@@ -927,6 +927,18 @@ img {
   }
 }
 
+.news-article__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.news-article__head {
+  color: #ffffff;
+  text-align: left;
+  background: #333333;
+  padding: 18px 30px;
+}
+
 .schedule__inner {
   background: rgba(255, 255, 255, 0.3);
   padding: 30px;
