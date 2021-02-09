@@ -1327,6 +1327,13 @@ textarea {
   text-align: justify;
 }
 
+.inquiry__text--center {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+  text-align: center;
+}
+
 .form {
   margin: 20px 0;
   display: flex;
