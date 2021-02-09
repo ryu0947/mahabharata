@@ -103,6 +103,23 @@ img {
   vertical-align: bottom;
 }
 
+input {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
+
+textarea {
+  appearance: none;
+  resize: none;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
 .breadcrumb {
   font-size: 12px;
   display: flex;
