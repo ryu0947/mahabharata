@@ -944,9 +944,21 @@ img {
   color: #ffffff;
 }
 
-.news-article__lead-title {
-  font-size: 24px;
+.news-article__lead {
+  font-size: 18px;
   color: #333333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .news-article__lead {
+    font-size: 24px;
+    color: #333333;
+  }
+}
+
+.news-article__lead:nth-of-type(2) {
   margin-bottom: 2em;
 }
 
