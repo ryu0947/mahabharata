@@ -154,10 +154,12 @@ img {
   margin-top: 0;
 }
 
+.cast__area {
+  transform: translateY(-115px);
+}
+
 .cast__list {
   display: block;
-  transform: translateY(-115px);
-  margin-bottom: -76px;
 }
 
 @media (min-width: 768px) {
@@ -276,10 +278,6 @@ img {
   border: 5px solid #c63205;
   transform: translateY(-30px);
   font-weight: 700;
-}
-
-.reset-mg {
-  margin-top: 132px;
 }
 
 .comments__title {
