@@ -76,34 +76,43 @@
     <main>
       <section class="inquiry section">
         <div class="container">
+          <h2 class="inquiry__title">INQUIRY</h2>
           <div class="inquiry__inner">
-            <h2 class="inquiry__title">INQUIRY</h2>
             <p class="inquiry__text">
               小池博史ブリッジプロジェクトにご興味を持っていただきまして、ありがとうございます。
             </p>
             <p class="inquiry__text">
-              公演に関するお問い合わせ、公演・ワークショップのご依頼など、<br />
+              公演に関するお問い合わせ、公演・ワークショップのご依頼など、
               お電話（03-3385-2066）か、下記フォームよりお気軽にお問い合わせください。
             </p>
             <form action="#">
-              <dl class="inquiry__table">
-                <dt class="form-name">お名前</dt>
-                <dd>
-                  <input type="text" name="name" />
-                </dd>
-                <dt>お電話番号</dt>
-                <dd class="form-tel">
-                  <input type="tel" name="tel" />
-                </dd>
-                <dt>メールアドレス</dt>
-                <dd class="form-email">
-                  <input type="email" name="email" />
-                </dd>
-                <dt>内容</dt>
-                <dd class="form-message">
-                  <textarea name="message" cols="40" rows="10"></textarea>
-                </dd>
+              <dl class="form">
+                <div class="form__row">
+                  <dt class="form__text">お名前</dt>
+                  <dd class="form__area">
+                    <input type="text" name="name" />
+                  </dd>
+                </div>
+                <div class="form__row">
+                  <dt class="form__text">お電話番号</dt>
+                  <dd class="form__area">
+                    <input type="tel" name="tel" />
+                  </dd>
+                </div>
+                <div class="form__row">
+                  <dt class="form__text">メールアドレス</dt>
+                  <dd class="form__area">
+                    <input type="email" name="email" />
+                  </dd>
+                </div>
+                <div class="form__row">
+                  <dt class="form__text">内容</dt>
+                  <dd class="form__area">
+                    <textarea name="message" cols="40" rows="10"></textarea>
+                  </dd>
+                </div>
               </dl>
+              <input type="button" value="送信" class="submit-btn" />
             </form>
           </div>
         </div>
