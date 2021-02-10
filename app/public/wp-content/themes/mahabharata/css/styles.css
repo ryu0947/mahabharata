@@ -768,29 +768,6 @@ textarea {
   background: rgba(198, 50, 5, 0.8);
 }
 
-.fv__btn--synopsis {
-  transform: translateY(20%);
-  background: #c63205;
-  width: 180px;
-  height: 40px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  user-select: none;
-  transition: background-color 0.4s;
-}
-
-.fv__btn--synopsis:hover {
-  background: rgba(198, 50, 5, 0.8);
-}
-
-@media (min-width: 768px) {
-  .fv__btn--synopsis {
-    transform: translateY(-25%);
-  }
-}
-
 .fv-child__btn {
   transform: translateY(50%);
   background: #c63205;
@@ -808,17 +785,40 @@ textarea {
   background: rgba(198, 50, 5, 0.8);
 }
 
-.fv__intro {
+.fv-child__btn--story {
+  transform: translateY(20%);
+  background: #c63205;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  user-select: none;
+  transition: background-color 0.4s;
+}
+
+.fv-child__btn--story:hover {
+  background: rgba(198, 50, 5, 0.8);
+}
+
+@media (min-width: 768px) {
+  .fv-child__btn--story {
+    transform: translateY(-25%);
+  }
+}
+
+.fv-child__intro {
   margin-top: 54px;
 }
 
-.fv__heading {
+.fv-child__heading {
   font-size: 34px;
   color: #ffffff;
   margin-bottom: 54px;
 }
 
-.fv__lead {
+.fv-child__lead {
   text-align: justify;
   font-size: 16px;
   color: #ffffff;
@@ -826,7 +826,7 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .fv__lead {
+  .fv-child__lead {
     margin-left: 50%;
   }
 }
