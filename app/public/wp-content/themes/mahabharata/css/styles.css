@@ -46,6 +46,7 @@ body {
 }
 
 .outer {
+  position: relative;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -829,10 +830,6 @@ textarea {
   .fv-child__lead {
     margin-left: 50%;
   }
-}
-
-.news {
-  position: relative;
 }
 
 .news__title {
