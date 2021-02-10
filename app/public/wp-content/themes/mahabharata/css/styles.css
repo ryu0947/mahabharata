@@ -174,12 +174,10 @@ textarea {
   margin-top: 0;
 }
 
-.cast__area {
-  transform: translateY(-115px);
-}
-
 .cast__list {
   display: block;
+  transform: translateY(-115px);
+  margin-bottom: -80px;
 }
 
 @media (min-width: 768px) {
