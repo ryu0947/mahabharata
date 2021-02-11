@@ -125,6 +125,10 @@ textarea {
 }
 
 .breadcrumb {
+  padding-top: 30px;
+}
+
+.breadcrumb__list {
   font-size: 12px;
   display: flex;
   align-self: start;
