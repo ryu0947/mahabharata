@@ -179,6 +179,10 @@ textarea {
   margin-top: 0;
 }
 
+.cast__area {
+  margin: 140px 60px;
+}
+
 .cast__list {
   display: block;
   transform: translateY(-115px);
