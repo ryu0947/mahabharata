@@ -2,13 +2,15 @@
   text-align: right;
 }
 
-.btn-position--story, .btn-position--comments {
+.btn-position--story,
+.btn-position--comments {
   text-align: center;
   margin-top: 1em;
 }
 
 @media (min-width: 768px) {
-  .btn-position--story, .btn-position--comments {
+  .btn-position--story,
+  .btn-position--comments {
     text-align: right;
   }
 }
@@ -240,7 +242,9 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .cast__text-item:nth-child(10), .cast__text-item:nth-child(11), .cast__text-item:nth-child(12) {
+  .cast__text-item:nth-child(10),
+  .cast__text-item:nth-child(11),
+  .cast__text-item:nth-child(12) {
     margin-bottom: 0;
   }
 }
@@ -264,7 +268,8 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .cast__sub-item:nth-child(3), .cast__sub-item:nth-child(4) {
+  .cast__sub-item:nth-child(3),
+  .cast__sub-item:nth-child(4) {
     margin-bottom: 0;
   }
 }
@@ -463,7 +468,9 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .comments__item:nth-child(10), .comments__item:nth-child(11), .comments__item:nth-child(12) {
+  .comments__item:nth-child(10),
+  .comments__item:nth-child(11),
+  .comments__item:nth-child(12) {
     margin-bottom: 0;
   }
 }
@@ -589,7 +596,8 @@ textarea {
   z-index: 0;
 }
 
-.fv__inner, .fv-child__inner {
+.fv__inner,
+.fv-child__inner {
   position: relative;
   text-align: center;
   padding: 45px 0;
@@ -738,12 +746,14 @@ textarea {
   }
 }
 
-.fv__flex, .fv-child__flex {
+.fv__flex,
+.fv-child__flex {
   display: block;
 }
 
 @media (min-width: 768px) {
-  .fv__flex, .fv-child__flex {
+  .fv__flex,
+  .fv-child__flex {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -1153,7 +1163,8 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .schedule__text:nth-child(2), .schedule__text:nth-child(3) {
+  .schedule__text:nth-child(2),
+  .schedule__text:nth-child(3) {
     margin-right: 20px;
   }
 }
@@ -1206,7 +1217,8 @@ textarea {
 }
 
 .introduction__inner {
-  background: rgba(255, 255, 255, 0.3) url(../images/intro.png) no-repeat left top/30%;
+  background: rgba(255, 255, 255, 0.3) url(../images/intro.png) no-repeat left
+    top/30%;
   padding: 20px;
 }
 
