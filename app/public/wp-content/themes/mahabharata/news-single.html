@@ -25,56 +25,66 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="container">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#">トップ<span class="en">TOP</span></a>
-            </li>
-            <li class="nav__item">
-              <a href="#">ニュース<span class="en">NEWS</span></a>
-            </li>
-            <li class="nav__item">
-              <a href="#">ストーリー<span class="en">STORY</span></a>
-            </li>
-            <li class="nav__item">
-              <a href="#">著名人コメント<span class="en">COMMENTS</span></a>
-            </li>
-            <li class="nav__item">
-              <a href="#">キャスト<span class="en">CAST</span></a>
-            </li>
-            <li class="nav__item">
-              <a href="#">お問い合わせ<span class="en">INQUIRY</span></a>
-            </li>
-          </ul>
-        </div>
+      <nav class="nav container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">トップ<span class="en">TOP</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">ニュース<span class="en">NEWS</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">ストーリー<span class="en">STORY</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">著名人コメント<span class="en">COMMENTS</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">キャスト<span class="en">CAST</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">お問い合わせ<span class="en">INQUIRY</span></a>
+          </li>
+        </ul>
       </nav>
       <div class="fv-child">
         <div class="container">
-          <div class="fv__inner child">
-            <div class="fv__flex">
-              <div class="fv__row--child">
-                <p class="fv__desc--child">
+          <div class="fv-child__inner">
+            <div class="fv-child__flex">
+              <div class="fv-child__row">
+                <p class="fv-child__desc">
                   世界最長の叙事詩をピーター・ブルック以来の全編舞台化
                 </p>
-                <h2 class="fv__title--child">完全版マハーバーラタ</h2>
+                <h2 class="fv-child__title">完全版マハーバーラタ</h2>
               </div>
-              <div class="fv__row--child">
-                <p class="fv__info--child">2020年7月4日〜7日</p>
-                <p class="fv__info--child">なかのZERO大ホール</p>
+              <div class="fv-child__row">
+                <p class="fv-child__info">2020年7月4日〜7日</p>
+                <p class="fv-child__info">なかのZERO大ホール</p>
               </div>
             </div>
-          </div>
-          <div class="btn-position">
-            <button class="fv__btn--child">
-              <a href="#">チケット予約サイトへ</a>
-            </button>
+            <div class="btn-position">
+              <button class="fv-child__btn">
+                <a href="#">チケット予約サイトへ</a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
+      <div class="container breadcrumb">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a href="index.html">ホーム</a><span>&gt;</span>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="news.html">NEWS</a><span>&gt;</span>
+          </li>
+          <li class="breadcrumb__item">「完全版マハーバーラタ」<br class="sp">2020年7月・東京公演！！</li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section class="news-article container section">
+      <section class="news-article js-animation">
+        <div class="container outer">
           <h1 class="news__title">NEWS</h1>
           <article class="news-article__inner">
             <div class="news-article__img">
@@ -130,17 +140,13 @@
                 />
                 <div class="post-prev">
                   <time>2019.9.28</time>
-                  <p class="post-title">
-                    前のニュース投稿のタイトル
-                  </p>
+                  <p class="post-title">前のニュース投稿のタイトル</p>
                 </div>
               </div>
               <div class="page-navigation__item">
                 <div class="post-next">
                   <time>2019.10.01</time>
-                  <p class="post-title">
-                    次のニュース投稿のタイトル
-                  </p>
+                  <p class="post-title">次のニュース投稿のタイトル</p>
                 </div>
                 <img
                   src="images/next.png"
@@ -150,8 +156,10 @@
               </div>
             </div>
           </article>
+        </div>
       </section>
-      <section class="schedule container section">
+      <section class="schedule js-animation">
+        <div class="container outer">
           <div class="schedule__inner">
             <h2 class="schedule__title">SCHEDULE</h2>
             <ul class="schedule__list">
@@ -205,6 +213,7 @@
               <a href="#">チケット予約サイトへ</a>
             </button>
           </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
