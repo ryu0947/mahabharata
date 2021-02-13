@@ -949,7 +949,7 @@ textarea {
 
 @media (min-width: 768px) {
   .news__item {
-    max-width: 33.333333%;
+    max-width: 33.3%;
     padding: 0 15px;
   }
   .news__item:hover {
