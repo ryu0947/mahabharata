@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="小池博史ブリッジプロジェクトが2013年から2020年までの8カ年計画でインド古代叙事詩「マハーバーラタ」の全編舞台作品化に挑む。いよいよその集大成である完全版マハーバーラタの公演が決定！！">
     <meta name="robots" content="noindex,nofollow">
     <title>
       マハーバーラタ完全版|世界最長の叙事詩をピーター・ブルック以来の全編舞台化
