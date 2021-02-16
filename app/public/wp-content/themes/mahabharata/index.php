@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow">
     <title>
       マハーバーラタ完全版|世界最長の叙事詩をピーター・ブルック以来の全編舞台化
     </title>
