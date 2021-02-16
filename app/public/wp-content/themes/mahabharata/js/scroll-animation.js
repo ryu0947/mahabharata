@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function ($) {
   $(window).on("scroll", function () {
     const target = $(".js-animation");
 
