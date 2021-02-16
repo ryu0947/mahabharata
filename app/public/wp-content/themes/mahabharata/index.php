@@ -24,6 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
+    <?php wp_head(); ?>
   </head>
   <body>
     <header class="header">
@@ -111,7 +112,7 @@
                 <div class="news__item-inner">
                   <div class="news__img">
                     <img
-                      src="images/news1.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/images/news1.jpg"
                       alt="「完全版マハーバーラタ」2020年7月・東京講演！！"
                     />
                   </div>
@@ -129,7 +130,7 @@
                 <div class="news__item-inner">
                   <div class="news__img">
                     <img
-                      src="images/news2.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/images/news2.jpg"
                       alt="ニュースのタイトルが入ります"
                     />
                   </div>
@@ -145,7 +146,7 @@
                 <div class="news__item-inner">
                   <div class="news__img">
                     <img
-                      src="images/news3.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/images/news3.jpg"
                       alt="ニュースのタイトルが入ります"
                     />
                   </div>
@@ -161,7 +162,7 @@
                 <div class="news__item-inner">
                   <div class="news__img">
                     <img
-                      src="images/news2.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/images/news2.jpg"
                       alt="ニュースのタイトルが入ります"
                     />
                   </div>
@@ -177,7 +178,7 @@
                 <div class="news__item-inner">
                   <div class="news__img">
                     <img
-                      src="images/news2.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/images/news2.jpg"
                       alt="ニュースのタイトルが入ります"
                     />
                   </div>
@@ -252,7 +253,7 @@
           <div class="container">
             <ul class="cast__list">
               <li class="cast__item">
-                <img src="images/cast1.jpg" alt="小池博史" class="cast__img" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/cast1.jpg" alt="小池博史" class="cast__img" />
                 <div class="cast__item-inner">
                   <div class="cast__info">
                     <p class="cast__part">作・演出・振付・構成</p>
@@ -273,7 +274,7 @@
               </li>
               <li class="cast__item">
                 <img
-                  src="images/cast2.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/cast2.jpg"
                   alt="白井さち子"
                   class="cast__img"
                 />
@@ -297,7 +298,7 @@
               </li>
               <li class="cast__item">
                 <img
-                  src="images/cast3.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/cast3.jpg"
                   alt="小谷野哲郎"
                   class="cast__img"
                 />
@@ -393,6 +394,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scroll-animation.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/scroll-animation.js"></script>
+    <?php wp_footer(); ?>
   </body>
 </html>
