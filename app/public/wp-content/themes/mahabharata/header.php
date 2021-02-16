@@ -23,7 +23,6 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" /> -->
     <?php wp_head(); ?>
   </head>
   <body>
