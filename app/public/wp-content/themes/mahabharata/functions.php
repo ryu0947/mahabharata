@@ -6,4 +6,6 @@ function add_file() {
 
 add_action('wp_enqueue_scripts', 'add_file');
 
+remove_filter('the_content', 'wpautop'); // 記事の自動整形を無効にする
+remove_filter('the_excerpt', 'wpautop'); // 抜粋の自動整形を無効にする
 ?>
