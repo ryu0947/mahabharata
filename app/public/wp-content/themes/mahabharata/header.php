@@ -88,12 +88,12 @@
                   <?php the_field('common_text', 33); ?>
                 </p>
                 <h2 class="fv-child__title">
-                  <?php echo get_the_title(33); ?>
+                <?php the_field('common_title', 33); ?>
                 </h2>
               </div>
               <div class="fv-child__row">
-                <p class="fv-child__info">2020年7月4日〜7日</p>
-                <p class="fv-child__info">なかのZERO大ホール</p>
+                <p class="fv-child__info"><?php the_field('performance_date', 33); ?></p>
+                <p class="fv-child__info"><?php the_field('performance_venue', 33); ?></p>
               </div>
             </div>
             <div class="btn-position">
@@ -123,13 +123,15 @@
             <div class="fv-child__flex">
               <div class="fv-child__row">
                 <p class="fv-child__desc">
-                  世界最長の叙事詩をピーター・ブルック以来の全編舞台化
+                   <?php the_field('common_text', 33); ?>
                 </p>
-                <h2 class="fv-child__title"><?php echo get_the_title(33); ?></h2>
+                <h2 class="fv-child__title">
+                   <?php the_field('common_title', 33); ?>
+                </h2>
               </div>
               <div class="fv-child__row">
-                <p class="fv-child__info">2020年7月4日〜7日</p>
-                <p class="fv-child__info">なかのZERO大ホール</p>
+                <p class="fv-child__info"><?php the_field('performance_date', 33); ?></p>
+                <p class="fv-child__info"><?php the_field('performance_venue', 33); ?></p>
               </div>
             </div>
             <div class="btn-position">
