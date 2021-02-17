@@ -6,6 +6,7 @@ function add_file() {
 
 add_action('wp_enqueue_scripts', 'add_file');
 
+// pタグの自動挿入を無効化する
 remove_filter('the_content', 'wpautop'); 
-remove_filter('the_excerpt', 'wpautop'); 
+remove_filter('the_excerpt', 'wpautop');
 ?>
