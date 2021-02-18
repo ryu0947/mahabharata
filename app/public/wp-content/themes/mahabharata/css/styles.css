@@ -917,6 +917,12 @@ textarea {
   margin-bottom: 30px;
 }
 
+.news__text {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
   .news__list {
     display: flex;
