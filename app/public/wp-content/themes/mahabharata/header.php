@@ -143,5 +143,12 @@
           </div>
         </div>
       </div>
+      <div class="breadcrumb container">
+               <?php
+                  if ( function_exists( 'bcn_display' ) ) {
+                    bcn_display();
+                  }
+               ?>
+              </div>
      <?php endif; ?>
     </header>
