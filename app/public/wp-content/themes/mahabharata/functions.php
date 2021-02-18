@@ -9,4 +9,7 @@ add_action('wp_enqueue_scripts', 'add_file');
 // pタグの自動挿入を無効化する
 remove_filter('the_content', 'wpautop'); 
 remove_filter('the_excerpt', 'wpautop');
+
+// アイキャッチ画像を有効にする。
+add_theme_support('post-thumbnails');
 ?>
