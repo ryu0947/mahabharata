@@ -101,12 +101,13 @@
               <a href="<?php the_field('reservation', 33); ?>">チケット予約サイトへ</a>
               </button>
             </div>
-            <ul class="breadcrumb__list">
-              <li class="breadcrumb__item--story">
-                <a href="index.html">ホーム</a><span>&gt;</span>
-              </li>
-              <li class="breadcrumb__item--story">STORY</li>
-            </ul>
+             <div class="breadcrumb">
+               <?php
+                  if ( function_exists( 'bcn_display' ) ) {
+                    bcn_display();
+                  }
+               ?>
+              </div>
             <div class="fv-child__intro js-animation">
               <h1 class="fv-child__heading"><?php echo get_the_title(); ?></h1>
               <div class="fv-child__lead">
