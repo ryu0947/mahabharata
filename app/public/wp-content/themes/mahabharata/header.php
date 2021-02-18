@@ -75,7 +75,7 @@
       </div>
       <div class="btn-position container">
         <button class="fv__btn">
-          <a href="#">チケット予約サイトへ</a>
+         <a href="<?php the_field('reservation', 33); ?>">チケット予約サイトへ</a>
         </button>
       </div>
     <?php elseif(is_page('story') ): ?>
@@ -98,7 +98,7 @@
             </div>
             <div class="btn-position">
               <button class="fv-child__btn--story">
-                <a href="#">チケット予約サイトへ</a>
+              <a href="<?php the_field('reservation', 33); ?>">チケット予約サイトへ</a>
               </button>
             </div>
             <ul class="breadcrumb__list">
@@ -136,7 +136,7 @@
             </div>
             <div class="btn-position">
               <button class="fv-child__btn">
-                <a href="#">チケット予約サイトへ</a>
+              <a href="<?php the_field('reservation', 33); ?>">チケット予約サイトへ</a>
               </button>
             </div>
           </div>
