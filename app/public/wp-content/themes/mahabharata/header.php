@@ -101,7 +101,7 @@
               <a href="<?php the_field('reservation', 33); ?>">チケット予約サイトへ</a>
               </button>
             </div>
-             <div class="breadcrumb">
+             <div class="breadcrumb-story">
                <?php
                   if ( function_exists( 'bcn_display' ) ) {
                     bcn_display();

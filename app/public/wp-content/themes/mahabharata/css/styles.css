@@ -136,43 +136,25 @@ textarea {
 }
 
 .breadcrumb {
-  padding-top: 30px;
-}
-
-.breadcrumb__list {
-  font-size: 12px;
-  display: flex;
-  align-self: start;
-}
-
-.breadcrumb__item {
-  margin-right: 5px;
   font-size: 12px;
   color: #333333;
   font-weight: 400;
+  text-align: left;
 }
 
-.breadcrumb__item--story {
-  margin-right: 5px;
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-story {
   font-size: 12px;
   color: #ffffff;
   font-weight: 400;
+  text-align: left;
 }
 
-.breadcrumb__item--story span {
-  margin-left: 5px;
-}
-
-.breadcrumb__item--story a:hover {
+.breadcrumb-story a:hover {
   text-decoration: underline;
-}
-
-.breadcrumb__item a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumb__item span {
-  margin-left: 5px;
 }
 
 .cast__title {
