@@ -9,7 +9,7 @@
                while(have_posts()): the_post();
            ?>
              <div class="news-article__img">
-               <?php the_post_thumbnail(); ?>
+               <?php the_post_thumbnail('article'); ?>
              </div>
              <div class="news-article__head">
                <time><?php the_time('Y.m.d'); ?></time>

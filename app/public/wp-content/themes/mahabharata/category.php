@@ -12,7 +12,7 @@
               <a href="<?php the_permalink(); ?>">
                 <div class="news__item-inner">
                   <div class="news__img">
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('news'); ?>
                   </div>
                   <div class="news__content">
                     <time class="news__time"><?php the_time('Y.m.d'); ?></time>
