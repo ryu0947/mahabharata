@@ -2,21 +2,21 @@
     <main>
       <section class="news-article js-animation">
         <div class="container outer">
-        <?php 
-          if(have_posts()):
-            while(have_posts()): the_post();
-        ?>
           <h2 class="news__title">NEWS</h2>
           <article class="news-article__inner">
-            <div class="news-article__img">
-              <?php the_post_thumbnail('large'); ?>
-            </div>
-            <div class="news-article__head">
-              <time><?php the_time('Y.m.d'); ?></time>
-              <h1 class="news-article__head-title">
-              <?php the_title(); ?>
-              </h1>
-            </div>
+           <?php 
+             if(have_posts()):
+               while(have_posts()): the_post();
+           ?>
+             <div class="news-article__img">
+               <?php the_post_thumbnail(); ?>
+             </div>
+             <div class="news-article__head">
+               <time><?php the_time('Y.m.d'); ?></time>
+               <h1 class="news-article__head-title">
+               <?php the_title(); ?>
+               </h1>
+             </div>
             <div class="news-article__body">
               <?php the_content(); ?>
             </div>
@@ -44,11 +44,11 @@
                 />
               </div>
             </div>
-          </article>
           <?php 
              endwhile;
             endif;
           ?>
+          </article>
         </div>
       </section>
      <?php get_footer(); ?>
