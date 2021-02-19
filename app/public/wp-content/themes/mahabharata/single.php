@@ -9,10 +9,7 @@
           <h2 class="news__title">NEWS</h2>
           <article class="news-article__inner">
             <div class="news-article__img">
-              <img
-                src="<?php echo get_template_directory_uri(); ?>/images/news-article1.jpg"
-                alt="「完全版マハーバーラタ」2020年7月・東京講演！！"
-              />
+              <?php the_post_thumbnail('large'); ?>
             </div>
             <div class="news-article__head">
               <time><?php the_time('Y.m.d'); ?></time>
