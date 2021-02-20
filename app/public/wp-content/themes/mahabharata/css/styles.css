@@ -927,7 +927,7 @@ textarea {
   .news__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 -15px 30px;
   }
 }
 
@@ -1102,6 +1102,23 @@ textarea {
 .post-prev {
   text-align: left;
   margin-left: 12px;
+}
+
+.wp-pagenavi span, .wp-pagenavi a {
+  border: 2px solid #000000;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.wp-pagenavi span:last-child, .wp-pagenavi a:last-child {
+  margin-right: 0;
+}
+
+.wp-pagenavi span.current, .wp-pagenavi a.current {
+  background: #000000;
+  color: #F4D102;
 }
 
 .schedule__inner {
