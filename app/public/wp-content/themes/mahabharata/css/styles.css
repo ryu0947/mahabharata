@@ -51,6 +51,10 @@ body {
   margin-bottom: 60px;
 }
 
+.outer.story {
+  margin-top: -60px;
+}
+
 @media (min-width: 768px) {
   .sp {
     display: none;
@@ -495,10 +499,6 @@ textarea {
 
 .header {
   margin-bottom: 60px;
-}
-
-.header.story {
-  margin-bottom: 0;
 }
 
 .nav__list {

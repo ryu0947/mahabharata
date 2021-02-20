@@ -1,6 +1,6 @@
   <?php get_header(); ?>
     <main>
-      <section class="outer">
+      <section class="outer story">
         <article class="synopsis synopsis-bg1 js-animation">
           <div class="container">
             <div class="synopsis__left">
