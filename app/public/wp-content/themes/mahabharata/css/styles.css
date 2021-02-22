@@ -343,7 +343,6 @@ textarea {
 
 .comments__inner {
   position: relative;
-  background: url("../images/comment.jpg") no-repeat 75% center/cover;
   margin: 20px 0;
 }
 
