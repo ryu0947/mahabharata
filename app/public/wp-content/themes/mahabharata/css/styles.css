@@ -1334,18 +1334,6 @@ textarea {
   background: rgba(198, 50, 5, 0.8);
 }
 
-.synopsis-bg1 {
-  background: url("../images/synopsis-bg1.png") no-repeat center/cover;
-}
-
-.synopsis-bg2 {
-  background: url("../images/synopsis-bg2.png") no-repeat center/cover;
-}
-
-.synopsis-bg3 {
-  background: url("../images/synopsis-bg3.png") no-repeat center/cover;
-}
-
 .synopsis__left {
   padding: 45px 0;
 }
