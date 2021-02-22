@@ -6,7 +6,7 @@
           <div class="comments__caption">
             <?php echo get_the_content(); ?>
           </div>
-          <div class="comments__inner" style="">
+          <div class="comments__inner" style="background: url(<?php the_field('top-comments-img'); ?>)no-repeat center/cover;">
             <div class="comments__text-area">
               <h3 class="comments__heading">
                 京都佛立ミュージアム館長<br />京都・長松寺/横浜・妙深寺<br
