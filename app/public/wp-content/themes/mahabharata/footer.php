@@ -3,46 +3,21 @@
           <div class="schedule__inner">
             <h2 class="schedule__title">SCHEDULE</h2>
             <ul class="schedule__list">
-              <li class="schedule__item">
-                <span class="schedule__text">2020.07.04</span>
-                <span class="schedule__text">17:00開演</span>
-                <span class="schedule__text">中野ZERO大ホール</span>
-                <span class="schedule__text"
-                  ><a href="#" class="schedule__link"
-                    >チケット予約受付中</a
-                  ></span
-                >
-              </li>
-              <li class="schedule__item">
-                <span class="schedule__text">2020.07.05</span>
-                <span class="schedule__text">17:00開演</span>
-                <span class="schedule__text">中野ZERO大ホール</span>
-                <span class="schedule__text"
-                  ><a href="#" class="schedule__link"
-                    >チケット予約受付中</a
-                  ></span
-                >
-              </li>
-              <li class="schedule__item">
-                <span class="schedule__text">2020.07.06</span>
-                <span class="schedule__text">17:00開演</span>
-                <span class="schedule__text">中野ZERO大ホール</span>
-                <span class="schedule__text"
-                  ><a href="#" class="schedule__link"
-                    >チケット予約受付中</a
-                  ></span
-                >
-              </li>
-              <li class="schedule__item">
-                <span class="schedule__text">2020.07.07</span>
-                <span class="schedule__text">17:00開演</span>
-                <span class="schedule__text">中野ZERO大ホール</span>
-                <span class="schedule__text"
-                  ><a href="#" class="schedule__link"
-                    >チケット予約受付中</a
-                  ></span
-                >
-              </li>
+              <?php 
+                $schedule_group = SCF::get('schedule', 29);
+                foreach($schedule_group as $schedule):
+              ?>
+                <li class="schedule__item">
+                  <span class="schedule__text"><?php echo $schedule['day']; ?></span>
+                  <span class="schedule__text"><?php echo $schedule['time']; ?></span>
+                  <span class="schedule__text"><?php echo $schedule['location']; ?></span>
+                  <span class="schedule__text"
+                    ><a href="#" class="schedule__link"
+                      >チケット予約受付中</a
+                    ></span
+                  >
+                </li>
+              <?php endforeach; ?>
             </ul>
           </div>
           <div class="schedule_link-area">
@@ -61,7 +36,7 @@
         <div class="footer__inner">
           <div class="copyright">
             <small
-              >Copyright &copy; 2019 完全版マハーバーラタ All Rights
+              >Copyright &copy; 2020 完全版マハーバーラタ All Rights
               Reserved.</small
             >
           </div>
