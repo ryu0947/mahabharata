@@ -3,33 +3,34 @@
       <section class="outer story">
          <?php 
             $filed_group = SCF::get('synopsis');
-            echo count ($filed_group);
               foreach($filed_group as $filed) {
-               $img = wp_get_attachment_image_src($filed['synopsis-img'], 'full');
+               $img1 = wp_get_attachment_image_src($filed['synopsis-img1'], 'full');
+               $img2 = wp_get_attachment_image_src($filed['synopsis-img2'], 'full');
+               $img3 = wp_get_attachment_image_src($filed['synopsis-img3'], 'full');
          ?>
-          <article class="synopsis js-animation" style="background: url(<?php echo $img[0]; ?>)no-repeat center/cover;">
+          <article class="synopsis js-animation" style="background: url(<?php echo $img1[0]; ?>)no-repeat center/cover;">
             <div class="container">
               <div class="synopsis__left">
                 <p class="synopsis__text">
-                <?php echo $filed['synopsis-text']; ?>
+                  <?php echo $filed['synopsis-text1']; ?>
                 </p>
               </div>
             </div>
           </article>
-          <article class="synopsis-bg2 js-animation">
+          <article class="js-animation" style="background: url(<?php echo $img2[0]; ?>)no-repeat center/cover;">
             <div class="container">
               <div class="synopsis__right">
                 <p class="synopsis__text">
-                <?php the_field('synopsis2'); ?>
+                  <?php echo $filed['synopsis-text2']; ?>
                 </p>
               </div>
             </div>
           </article>
-          <article class="synopsis-bg3 js-animation">
+          <article class="js-animation" style="background: url(<?php echo $img3[0]; ?>)no-repeat center/cover;">
             <div class="container">
               <div class="synopsis__left">
                 <p class="synopsis__text">
-                <?php the_field('synopsis3'); ?>
+                  <?php echo $filed['synopsis-text3']; ?>
                 </p>
               </div>
             </div>
