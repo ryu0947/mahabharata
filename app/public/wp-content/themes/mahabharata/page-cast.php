@@ -43,7 +43,7 @@
                   <div class="cast__info">
                     <p class="cast__part"><?php echo $subCast_value['sub-cast-part']; ?></p>
                     <h3 class="cast__name"><?php echo $subCast_value['sub-cast-name']; ?></h3>
-                    <p class="cast__job"><?php echo $subCast_value['subcast-job']; ?></p>
+                    <p class="cast__job"><?php echo $subCast_value['sub-cast-job']; ?></p>
                   </div>
                   <p class="cast__text--center">
                     <?php echo nl2br($subCast_value['sub-cast-intro']); ?>
@@ -57,17 +57,22 @@
         <div class="cast__bg--center">
           <div class="container outer js-animation">
             <ul class="cast__text-list">
+               <?php 
+                   $castCredit_group = SCF::get("cast-credit");
+                   foreach($castCredit_group as $castCredit_name => $castCredit_value):
+               ?>
               <li class="cast__text-item">
                 <div class="cast__item-inner">
                   <div class="cast__info">
-                    <p class="cast__part">作・演出・振付・構成</p>
-                    <h3 class="cast__name">小池博史</h3>
+                    <p class="cast__part"><?php echo $castCredit_value['cast-part']; ?></p>
+                    <h3 class="cast__name"><?php echo $castCredit_value['cast-name']; ?></h3>
                     <p class="cast__job">
-                      (演出家・作家・振付家・舞台美術家・写真家)
+                      <?php echo $castCredit_value['cast-job']; ?>
                     </p>
                   </div>
                 </div>
               </li>
+             <?php endforeach; ?>
             </ul>
           </div>
         </div>
