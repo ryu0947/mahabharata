@@ -23,16 +23,20 @@
             </div>
           </div>
           <ul class="comments__list">
+            <?php 
+              $comments_group = SCF::get('comments');
+              foreach($comments_group as $comments):
+            ?>
             <li class="comments__item">
               <div class="comments__info">
-                <h3 class="comments__name">今福龍太</h3>
-                <p class="comments__job">文化人類学者</p>
+                <h3 class="comments__name"><?php echo $comments['comments-name']; ?></h3>
+                <p class="comments__job"><?php echo $comments['comments-job']; ?></p>
               </div>
               <p class="comments__text--black">
-                蝶は風を受けて飛ぶ。いやむしろ、風を切って飛ぶ。いやさらにいえば、みずから風を孕み風を生み出す。
-                吹きすさび循環する大風のような物語。小池舞台はそんな物語を生成する未知なる蝶の飛翔だ。
+                <?php echo $comments['comments-text']; ?>
               </p>
             </li>
+           <?php endforeach; ?>
           </ul>
         </div>
       </section>
