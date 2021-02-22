@@ -58,16 +58,16 @@
           <div class="container outer js-animation">
             <ul class="cast__text-list">
                <?php 
-                   $castCredit_group = SCF::get("cast-credit");
-                   foreach($castCredit_group as $castCredit_name => $castCredit_value):
+                   $credit_group = SCF::get("credit");
+                   foreach($credit_group as $credit_name => $credit_value):
                ?>
               <li class="cast__text-item">
                 <div class="cast__item-inner">
                   <div class="cast__info">
-                    <p class="cast__part"><?php echo $castCredit_value['cast-part']; ?></p>
-                    <h3 class="cast__name"><?php echo $castCredit_value['cast-name']; ?></h3>
+                    <p class="cast__part"><?php echo $credit_value['credit-part']; ?></p>
+                    <h3 class="cast__name"><?php echo $credit_value['credit-name']; ?></h3>
                     <p class="cast__job">
-                      <?php echo $castCredit_value['cast-job']; ?>
+                      <?php echo $credit_value['credit-job']; ?>
                     </p>
                   </div>
                 </div>
