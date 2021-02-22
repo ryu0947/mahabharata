@@ -7,7 +7,7 @@
             <ul class="cast__list">
                 <?php 
                   $cast_group = SCF::get("cast");
-                  foreach($cast_group as $cast_name => $cast_value){ 
+                  foreach($cast_group as $cast_name => $cast_value):
                     $img = wp_get_attachment_image_src($cast_value['cast-img'], 'full');
                 ?>
               <li class="cast__item">
@@ -25,7 +25,7 @@
                   </p>
                 </div>
               </li>
-             <?php } ?>
+             <?php endforeach; ?>
             </ul>
           </div>
         </div>
@@ -34,7 +34,7 @@
             <ul class="cast__sub-list">
             <?php 
                   $subCast_group = SCF::get("sub-cast");
-                  foreach($subCast_group as $subCast_name => $subCast_value){ 
+                  foreach($subCast_group as $subCast_name => $subCast_value):
                     $img = wp_get_attachment_image_src($subCast_value['sub-cast-img'], 'full');
                 ?>
               <li class="cast__sub-item">
@@ -50,7 +50,7 @@
                   </p>
                 </div>
               </li>
-             <?php } ?>
+             <?php endforeach; ?>
             </ul>
           </div>
         </div>
@@ -65,111 +65,6 @@
                     <p class="cast__job">
                       (演出家・作家・振付家・舞台美術家・写真家)
                     </p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">白井さち子</h3>
-                    <p class="cast__job">(バレエ、コンテンポラリーダンス)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">小谷野哲郎</h3>
-                    <p class="cast__job">(バリ舞踏)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">作・演出・振付・構成</p>
-                    <h3 class="cast__name">小池博史</h3>
-                    <p class="cast__job">
-                      (演出家・作家・振付家・舞台美術家・写真家)
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">白井さち子</h3>
-                    <p class="cast__job">(バレエ、コンテンポラリーダンス)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">小谷野哲郎</h3>
-                    <p class="cast__job">(バリ舞踏)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">作・演出・振付・構成</p>
-                    <h3 class="cast__name">小池博史</h3>
-                    <p class="cast__job">
-                      (演出家・作家・振付家・舞台美術家・写真家)
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">白井さち子</h3>
-                    <p class="cast__job">(バレエ、コンテンポラリーダンス)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">小谷野哲郎</h3>
-                    <p class="cast__job">(バリ舞踏)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">作・演出・振付・構成</p>
-                    <h3 class="cast__name">小池博史</h3>
-                    <p class="cast__job">
-                      (演出家・作家・振付家・舞台美術家・写真家)
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">白井さち子</h3>
-                    <p class="cast__job">(バレエ、コンテンポラリーダンス)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="cast__text-item">
-                <div class="cast__item-inner">
-                  <div class="cast__info">
-                    <p class="cast__part">出演</p>
-                    <h3 class="cast__name">小谷野哲郎</h3>
-                    <p class="cast__job">(バリ舞踏)</p>
                   </div>
                 </div>
               </li>

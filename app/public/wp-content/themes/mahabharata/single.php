@@ -6,7 +6,8 @@
           <article class="news-article__inner">
            <?php 
              if(have_posts()):
-               while(have_posts()): the_post();
+               while(have_posts()): 
+                the_post();
            ?>
              <div class="news-article__img">
                <?php the_post_thumbnail('article'); ?>
