@@ -2,11 +2,11 @@
     <main>
       <section class="comments js-animation">
         <div class="container outer">
-          <h2 class="comments__title">COMMENTS</h2>
-          <p class="comments__caption">
-            舞台関係者のみならず各界著名人からコメントが届いています！
-          </p>
-          <div class="comments__inner">
+          <h2 class="comments__title"><?php echo get_the_title(); ?></h2>
+          <div class="comments__caption">
+            <?php echo get_the_content(); ?>
+          </div>
+          <div class="comments__inner" style="">
             <div class="comments__text-area">
               <h3 class="comments__heading">
                 京都佛立ミュージアム館長<br />京都・長松寺/横浜・妙深寺<br
@@ -152,4 +152,4 @@
           </ul>
         </div>
       </section>
-     <?php get_footer(); ?> 
+     <?php get_footer(); ?>
