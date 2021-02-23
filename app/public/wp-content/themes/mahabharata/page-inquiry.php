@@ -4,9 +4,7 @@
         <div class="container outer">
           <h2 class="inquiry__title"><?php echo get_the_title(); ?></h2>
           <div class="inquiry__inner">
-            <p class="inquiry__text">
               <?php the_content(); ?>
-            </p>
             <form action="#">
               <dl class="form">
                 <div class="form__row">
