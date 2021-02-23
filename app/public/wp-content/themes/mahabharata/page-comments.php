@@ -4,7 +4,7 @@
         <div class="container outer">
           <h2 class="comments__title"><?php echo get_the_title(); ?></h2>
           <div class="comments__caption">
-            <?php echo get_the_content(); ?>
+            <?php the_content(); ?>
           </div>
           <div class="comments__inner" style="background: url(<?php the_field('top-comments-img'); ?>)no-repeat 75% center / cover;">
             <div class="comments__text-area">
