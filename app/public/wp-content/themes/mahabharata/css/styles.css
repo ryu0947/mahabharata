@@ -1379,6 +1379,7 @@ textarea {
   max-width: 600px;
   margin: 0 auto;
   padding: 30px 15px;
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
@@ -1391,8 +1392,11 @@ textarea {
   font-size: 16px;
   color: #333333;
   font-weight: 400;
-  text-align: justify;
   margin-bottom: 1em;
+}
+
+.inquiry__center {
+  text-align: center;
 }
 
 .inquiry__title {
@@ -1447,6 +1451,10 @@ textarea {
 .form textarea {
   width: 100%;
   padding: 7px;
+}
+
+.submit-btn {
+  text-align: center;
 }
 
 input[type="submit"] {
