@@ -17,4 +17,16 @@ add_theme_support('post-thumbnails');
 add_image_size('news', 360, 201, true);
 
 add_image_size('article', 1024, 731, true);
+
+function add_confirm_page() {
+  echo <<<EOS
+    <script>
+      document.addEventListener('wpcf7mailsent', () => {
+        location = 'http://localhost:10004/confirm/';
+      }, false );
+    </script>
+  EOS;
+}
+
+add_action('wp_footer', 'add_confirm_page');
 ?>
