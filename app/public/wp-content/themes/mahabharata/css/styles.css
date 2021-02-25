@@ -975,6 +975,7 @@ textarea {
   .top .news__item:nth-child(4) .news__item-inner .news__img,
   .top .news__item:nth-child(5) .news__item-inner .news__img {
     width: 42%;
+    display: flex;
   }
 }
 
