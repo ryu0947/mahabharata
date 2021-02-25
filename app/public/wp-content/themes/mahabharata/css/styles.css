@@ -1483,7 +1483,19 @@ input[type="submit"]:hover {
   background: rgba(198, 50, 5, 0.8);
 }
 
-.error__error {
+.error__title {
   font-size: 34px;
   color: #333333;
+  margin-bottom: 1em;
+}
+
+.error__text {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.error__text:hover {
+  text-decoration: none;
 }
