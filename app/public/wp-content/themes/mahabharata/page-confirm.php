@@ -13,17 +13,11 @@
           <h2 class="news__title">NEWS</h2>
           <div class="news__list top">
               <?php 
-                $news_posts = array(
-                  'post_type' => 'post',
-                  'category_name' => 'news',
-                  'posts_per_page'=> '5',
-                );
-    
-                $wp_query = new WP_Query($news_posts);
+                $news_posts = get_post_pages(5);
               
-                if($wp_query -> have_posts()):
-                  while($wp_query -> have_posts()):
-                    $wp_query -> the_post();
+                if($news_posts -> have_posts()):
+                  while($news_posts -> have_posts()):
+                    $news_posts -> the_post();
               ?>
             <article class="news__item">
               <a href="<?php the_permalink(); ?>">

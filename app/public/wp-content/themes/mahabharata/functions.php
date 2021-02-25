@@ -29,4 +29,17 @@ function add_confirm_page() {
 }
 
 add_action('wp_footer', 'add_confirm_page');
+
+function get_post_pages($number){
+    $args = array(
+        'post_type' => 'post',
+        'category_name' => 'news',
+        'posts_per_page'=> $number,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    );
+
+    $wp_query = new WP_Query($args);
+    return $wp_query;
+}
 ?>
