@@ -12,24 +12,39 @@
         <div class="container outer">
           <h2 class="news__title">NEWS</h2>
           <div class="news__list top">
+          <?php 
+            $news_posts = array(
+              'post_type' => 'post',
+              'category_name' => 'news',
+              'posts_per_page'=> '5',
+            );
+
+            $wp_query = new WP_Query($news_posts);
+          
+            if($wp_query -> have_posts()):
+              while($wp_query -> have_posts()):
+                $wp_query -> the_post();
+          ?>
             <article class="news__item">
-              <a href="#">
+              <a href="<?php the_permalink(); ?>">
                 <div class="news__item-inner">
                   <div class="news__img">
-                    <img
-                      src="images/news1.jpg"
-                      alt="「完全版マハーバーラタ」2020年7月・東京講演！！"
-                    />
+                  <?php the_post_thumbnail('news'); ?>
                   </div>
                   <div class="news__content">
-                    <time class="news__time">2019.11.30</time>
+                    <time class="news__time"><?php the_time('Y.m.d'); ?></time>
                     <p class="news__text">
-                      「完全版マハーバーラタ」2020年7月・東京講演！！
+                    <?php the_title(); ?>
                     </p>
                   </div>
                 </div>
               </a>
             </article>
+        <?php 
+           endwhile;
+          endif;
+         wp_reset_postdata();
+        ?>
           </div>
           <button class="news__btn"><a href="#">ニュース一覧へ</a></button>
         </div>

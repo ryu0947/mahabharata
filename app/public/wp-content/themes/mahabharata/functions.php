@@ -14,7 +14,7 @@ remove_filter('the_excerpt', 'wpautop');
 add_theme_support('post-thumbnails');
 
 // 画像サイズ指定
-add_image_size('news', 360, 201, true);
+add_image_size('news', 384, 215, true);
 
 add_image_size('article', 1024, 731, true);
 
