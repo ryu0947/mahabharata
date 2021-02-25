@@ -1402,6 +1402,13 @@ textarea {
   text-align: center;
 }
 
+.inquiry__center p {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
 .inquiry__title {
   font-size: 34px;
   color: #333333;
@@ -1474,4 +1481,9 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: rgba(198, 50, 5, 0.8);
+}
+
+.error__error {
+  font-size: 34px;
+  color: #333333;
 }
