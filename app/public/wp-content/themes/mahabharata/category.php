@@ -28,7 +28,11 @@
             endif;
             ?>
           </div>
-          <?php wp_pagenavi(); ?>
+        <?php 
+           if(function_exists(wp_pagenavi())):
+              wp_pagenavi();
+            endif;
+        ?>
         </div>
       </section>
     <?php get_footer(); ?>
