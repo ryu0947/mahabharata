@@ -24,7 +24,7 @@
             <div class="page-navigation">
               <div class="page-navigation__item">
                 <img
-                  src="images/prev.png"
+                  src="<?php echo get_template_directory_uri(); ?>/images/prev.png"
                   alt="前へ"
                   class="page-navigation__img"
                 />
@@ -39,7 +39,7 @@
                   <p class="post-title">次のニュース投稿のタイトル</p>
                 </div>
                 <img
-                  src="images/next.png"
+                  src="<?php echo get_template_directory_uri(); ?>/images/next.png"
                   alt="次へ"
                   class="page-navigation__img"
                 />
