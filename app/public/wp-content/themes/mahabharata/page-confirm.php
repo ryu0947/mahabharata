@@ -13,7 +13,7 @@
           <h2 class="news__title">NEWS</h2>
           <div class="news__list top">
               <?php 
-                $news_posts = get_post_pages(5);
+                $news_posts = get_post_pages();
               
                 if($news_posts -> have_posts()):
                   while($news_posts -> have_posts()):

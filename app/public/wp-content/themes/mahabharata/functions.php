@@ -30,7 +30,7 @@ function add_confirm_page() {
 
 add_action('wp_footer', 'add_confirm_page');
 
-function get_post_pages($number){
+function get_post_pages($number = 5){
     $args = array(
         'post_type' => 'post',
         'category_name' => 'news',
