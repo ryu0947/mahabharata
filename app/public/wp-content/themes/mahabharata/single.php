@@ -2,7 +2,7 @@
     <main>
       <section class="news-article js-animation">
         <div class="container outer">
-          <h2 class="news__title">NEWS</h2>
+          <h2 class="news__title"><?php echo get_the_title('category'); ?></h2>
           <article class="news-article__inner">
            <?php 
              if(have_posts()):
