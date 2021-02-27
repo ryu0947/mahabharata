@@ -1310,17 +1310,17 @@ textarea {
 
 @media (min-width: 768px) {
   .story__text-area {
-    margin-left: 50%;
+    margin-left: 60%;
   }
 }
 
-.story__text {
+.story__text-area p {
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
 }
 
-.story__text:not(:first-child) {
+.story__text-area p:not(:first-child) {
   margin-top: 1em;
 }
 
