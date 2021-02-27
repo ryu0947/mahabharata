@@ -21,30 +21,42 @@
             <div class="news-article__body">
               <?php the_content(); ?>
             </div>
-            <div class="page-navigation">
-              <div class="page-navigation__item">
+            <div class="page-navi">
+              <?php 
+                $next = get_next_post();
+                $prev = get_previous_post();
+              ?>
+            <?php if($prev): ?>
+              <div class="page-navi__item">
+                <a href="<?php echo get_permalink($prev->ID); ?>" class="page-navi__link"> 
                 <img
                   src="<?php echo get_template_directory_uri(); ?>/images/prev.png"
                   alt="前へ"
-                  class="page-navigation__img"
+                  class="page-navi__img"
                 />
                 <div class="post-prev">
-                  <time>2019.9.28</time>
-                  <p class="post-title">前のニュース投稿のタイトル</p>
+                  <p class="post-title">前の記事へ</p>
                 </div>
+                </a>
               </div>
-              <div class="page-navigation__item">
+            <?php 
+             endif;
+             if($next):
+            ?>
+              <div class="page-navi__item">
+               <a href="<?php echo get_permalink($next->ID); ?>" class="page-navi__link">
                 <div class="post-next">
-                  <time>2019.10.01</time>
-                  <p class="post-title">次のニュース投稿のタイトル</p>
+                  <p class="post-title">次の記事へ</p>
                 </div>
                 <img
                   src="<?php echo get_template_directory_uri(); ?>/images/next.png"
                   alt="次へ"
-                  class="page-navigation__img"
+                  class="page-navi__img"
                 />
               </div>
+              </a>
             </div>
+            <?php endif; ?>
           <?php 
              endwhile;
             endif;

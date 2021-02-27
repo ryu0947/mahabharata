@@ -1080,32 +1080,6 @@ textarea {
   margin-bottom: 1em;
 }
 
-.page-navigation {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0 60px;
-}
-
-.page-navigation__item {
-  display: flex;
-  align-items: center;
-}
-
-.page-navigation__img {
-  width: 32px;
-  height: 32px;
-}
-
-.post-next {
-  text-align: right;
-  margin-right: 12px;
-}
-
-.post-prev {
-  text-align: left;
-  margin-left: 12px;
-}
-
 .wp-pagenavi span, .wp-pagenavi a {
   border: 2px solid #000000;
   padding: 5px 10px;
@@ -1121,6 +1095,36 @@ textarea {
 .wp-pagenavi span.current, .wp-pagenavi a.current {
   background: #000000;
   color: #F4D102;
+}
+
+.page-navi {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 60px;
+}
+
+.page-navi__item, .page-navi__link {
+  display: flex;
+  align-items: center;
+}
+
+.page-navi__item:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.page-navi__img {
+  width: 32px;
+  height: 32px;
+}
+
+.post-next {
+  text-align: right;
+  margin-right: 12px;
+}
+
+.post-prev {
+  text-align: left;
+  margin-left: 12px;
 }
 
 .schedule__inner {
