@@ -35,7 +35,7 @@
                   class="page-navi__img"
                 />
                 <div class="post-prev">
-                  <p class="post-title">前の記事へ</p>
+                  <p class="post-title"><?php echo $prev->post_title ?></p>
                 </div>
                 </a>
               </div>
@@ -46,7 +46,7 @@
               <div class="page-navi__item">
                <a href="<?php echo get_permalink($next->ID); ?>" class="page-navi__link">
                 <div class="post-next">
-                  <p class="post-title">次の記事へ</p>
+                  <p class="post-title"><?php echo $next->post_title ?></p>
                 </div>
                 <img
                   src="<?php echo get_template_directory_uri(); ?>/images/next.png"
