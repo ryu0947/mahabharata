@@ -31,8 +31,15 @@ function add_confirm_page() {
 
 add_action('wp_footer', 'add_confirm_page');
 
+function get_page_date($slug) {
+  $page_obj = get_page_by_path($slug);
+  $page_date = get_post($post_obj);
+  $content = $post_date -> post_content;
+  $title = $post_date -> post_title;
+}
+
 // ニュース記事取得
-function get_post_pages($number = 5){
+function get_news_pages($number = 5){
     $args = array(
         'post_type' => 'post',
         'category_name' => 'news',

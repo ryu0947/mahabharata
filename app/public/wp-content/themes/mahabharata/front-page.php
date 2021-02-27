@@ -3,19 +3,19 @@
       <section class="introduction js-animation">
         <div class="container outer">
           <?php 
-            $introduction_obj = get_page_by_path('introduction'); 
-            $post = $introduction_obj;
-            setup_postdata($post);
+            $introduction_obj = get_page_by_path('introduction');
+            $post_date = get_post($introduction_obj);
+            $content = $post_date -> post_content;
+            $title = $post_date -> post_title;
           ?>
           <div class="introduction__inner">
-            <h2 class="introduction__title"><?php the_title(); ?></h2>
+            <h2 class="introduction__title"><?php echo $title ?></h2>
             <h3 class="introduction__lead">なぜ今「マハーバーラタ」なのか？</h3>
             <div class="introduction__column">
-              <?php the_content(); ?>
+              <?php echo $content ?>
               </p>
             </div>
           </div>
-          <?php wp_reset_postdata();?>
         </div>
       </section>
       <section class="news js-animation">
@@ -24,7 +24,7 @@
           <h2 class="news__title"><?php echo $news_term->name; ?></h2>
           <div class="news__list top">
               <?php 
-                $news_posts = get_post_pages();
+                $news_posts = get_news_pages();
               
                 if($news_posts -> have_posts()):
                   while($news_posts -> have_posts()):
@@ -77,16 +77,10 @@
       </section>
       <section class="comments js-animation">
         <div class="container outer">
-        <?php 
-            $comments_obj = get_page_by_path('comments'); 
-            $post = $comments_obj;
-            setup_postdata($post);
-          ?>
-          <h2 class="comments__title"><?php the_title(); ?></h2>
+          <h2 class="comments__title"><?php echo get_the_title(23); ?></h2>
           <div class="comments__caption">
-            <?php the_content(); ?>
+            <?php echo get_the_content(23); ?>
           </div>
-          <?php wp_reset_postdata();?>
           <div class="comments__inner" style="background: url(<?php the_field('top-comments-img', 23); ?>)no-repeat 75% center / cover;">
             <div class="comments__text-area">
             <h3 class="comments__heading">

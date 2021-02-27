@@ -14,7 +14,7 @@
           <h2 class="news__title"><?php echo $news_term->name; ?></h2>
           <div class="news__list top">
               <?php 
-                $news_posts = get_post_pages();
+                $news_posts = get_news_pages();
               
                 if($news_posts -> have_posts()):
                   while($news_posts -> have_posts()):
