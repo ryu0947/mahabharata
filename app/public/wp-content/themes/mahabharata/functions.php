@@ -18,6 +18,7 @@ add_image_size('news', 384, 215, true);
 
 add_image_size('article', 1024, 731, true);
 
+// サンクスページへリダイレクト
 function add_confirm_page() {
   echo <<<EOS
     <script>
@@ -30,6 +31,7 @@ function add_confirm_page() {
 
 add_action('wp_footer', 'add_confirm_page');
 
+// ニュース記事取得
 function get_post_pages($number = 5){
     $args = array(
         'post_type' => 'post',
