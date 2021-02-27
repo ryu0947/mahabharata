@@ -51,7 +51,7 @@
          wp_reset_postdata();
         ?>
           </div>
-          <button class="news__btn"><a href="#">ニュース一覧へ</a></button>
+          <button class="news__btn"><a href="<?php echo esc_url( home_url('category/news')); ?>">ニュース一覧へ</a></button>
         </div>
       </section>
       <section class="story js-animation">
@@ -98,7 +98,7 @@
               </p>
               <div class="btn-position--comments">
                 <button class="comments__btn">
-                  <a href="#">もっと見る</a>
+                  <a href="<?php echo esc_url( home_url('comments')); ?>">もっと見る</a>
                 </button>
               </div>
             </div>
@@ -177,7 +177,7 @@
                 </div>
               </li>
             </ul>
-            <button class="cast__btn"><a href="#">もっと見る</a></button>
+            <button class="cast__btn"><a href="<?php echo esc_url( home_url('cast')); ?>">もっと見る</a></button>
           </div>
         </div>
       </section>

@@ -30,22 +30,22 @@
       <nav class="nav container">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ<span class="en">TOP</span></a>
+            <a href="<?php echo esc_url( home_url('/')); ?>">トップ<span class="en">TOP</span></a>
           </li>
           <li class="nav__item">
-            <a href="#">ニュース<span class="en">NEWS</span></a>
+            <a href="<?php echo esc_url( home_url('category/news')); ?>">ニュース<span class="en">NEWS</span></a>
           </li>
           <li class="nav__item">
-            <a href="#">ストーリー<span class="en">STORY</span></a>
+            <a href="<?php echo esc_url( home_url('story')); ?>">ストーリー<span class="en">STORY</span></a>
           </li>
           <li class="nav__item">
-            <a href="#">著名人コメント<span class="en">COMMENTS</span></a>
+            <a href="<?php echo esc_url( home_url('comments')); ?>">著名人コメント<span class="en">COMMENTS</span></a>
           </li>
           <li class="nav__item">
-            <a href="#">キャスト<span class="en">CAST</span></a>
+            <a href="<?php echo esc_url( home_url('cast')); ?>">キャスト<span class="en">CAST</span></a>
           </li>
           <li class="nav__item">
-            <a href="#">お問い合わせ<span class="en">INQUIRY</span></a>
+            <a href="<?php echo esc_url( home_url('inquiry')); ?>">お問い合わせ<span class="en">INQUIRY</span></a>
           </li>
         </ul>
       </nav>

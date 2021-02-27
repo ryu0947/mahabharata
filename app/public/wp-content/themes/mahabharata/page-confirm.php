@@ -41,7 +41,7 @@
          wp_reset_postdata();
         ?>
           </div>
-          <button class="news__btn"><a href="#">ニュース一覧へ</a></button>
+          <button class="news__btn"><a href="<?php echo esc_url( home_url('category/news')); ?>">ニュース一覧へ</a></button>
         </div>
       </section>
   <?php get_footer(); ?>
