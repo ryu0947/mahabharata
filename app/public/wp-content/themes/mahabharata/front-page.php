@@ -3,10 +3,9 @@
       <section class="introduction js-animation">
         <div class="container outer">
           <?php 
-            $introduction_obj = get_page_by_path('introduction');
-            $post_date = get_post($introduction_obj);
-            $content = $post_date -> post_content;
-            $title = $post_date -> post_title;
+            $page_obj = get_page_by_path('introduction');
+            $title = $page_obj -> post_title;
+            $content = $page_obj -> post_content;
           ?>
           <div class="introduction__inner">
             <h2 class="introduction__title"><?php echo $title ?></h2>
@@ -58,28 +57,32 @@
         <div class="story__bg">
           <div class="container outer">
           <?php 
-            $story_obj = get_page_by_path('story'); 
-            $post = $story_obj;
-            setup_postdata($post);
+            $page_obj = get_page_by_path('story'); 
+            $title = $page_obj -> post_title;
+            $content = $page_obj -> post_content;
           ?>
             <div class="story__inner">
-              <h2 class="story__title"><?php the_title(); ?></h2>
+              <h2 class="story__title"><?php echo $title; ?></h2>
               <div class="story__text-area">
-                <?php the_content(); ?>
+                <?php echo $content; ?>
               </div>
               <div class="btn-position--story">
                 <button class="story__btn"><a href="<?php echo esc_url( home_url('story') ); ?>">もっと詳しく</a></button>
               </div>
             </div>
           </div>
-         <?php wp_reset_postdata();?>
         </div>
       </section>
       <section class="comments js-animation">
         <div class="container outer">
-          <h2 class="comments__title"><?php echo get_the_title(23); ?></h2>
+        <?php 
+          $page_obj = get_page_by_path('comments'); 
+          $title = $page_obj -> post_title;
+          $content = $page_obj -> post_content;
+        ?>
+          <h2 class="comments__title"><?php echo $title; ?></h2>
           <div class="comments__caption">
-            <?php echo get_the_content(23); ?>
+            <?php echo $content; ?>
           </div>
           <div class="comments__inner" style="background: url(<?php the_field('top-comments-img', 23); ?>)no-repeat 75% center / cover;">
             <div class="comments__text-area">
@@ -100,7 +103,11 @@
         </div>
       </section>
       <section class="cast outer js-animation">
-        <h2 class="cast__title"><?php echo get_the_title(19); ?></h2>
+        <?php 
+          $page_obj = get_page_by_path('cast'); 
+          $title = $page_obj -> post_title;
+        ?>
+        <h2 class="cast__title"><?php echo $title ?></h2>
         <div class="cast__bg">
           <div class="container">
           <ul class="cast__list">
