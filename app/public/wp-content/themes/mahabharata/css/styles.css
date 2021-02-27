@@ -1280,13 +1280,13 @@ textarea {
   }
 }
 
-.introduction__text {
+.introduction p {
   font-size: 16px;
   color: #333333;
   font-weight: 400;
 }
 
-.introduction__text:not(:first-child) {
+.introduction p:not(:first-child) {
   margin-top: 1em;
 }
 

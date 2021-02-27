@@ -2,26 +2,20 @@
     <main>
       <section class="introduction js-animation">
         <div class="container outer">
+          <?php 
+            $introduction_obj = get_page_by_path('introduction'); 
+            $post = $introduction_obj;
+            setup_postdata($post);
+          ?>
           <div class="introduction__inner">
-            <h2 class="introduction__title">INTRODUCTION</h2>
-            <p class="introduction__lead">なぜ今「マハーバーラタ」なのか？</p>
+            <h2 class="introduction__title"><?php the_title(); ?></h2>
+            <h3 class="introduction__lead">なぜ今「マハーバーラタ」なのか？</h3>
             <div class="introduction__column">
-              <p class="introduction__text">
-                「平和」について改めて考えるストーリー全世界を司るものが神だとすれば、なぜ神であるクリシュナは、策を巡らしてまで、登場人物すべてを滅亡へと導いたのか？
-              </p>
-              <p class="introduction__text">
-                それは、「戦い」そのものを廃絶しようとしたからだと考えられる。戦うことそのものへの虚しさ、「戦い」そのものの「悪」を問う物語が「マハーバーラタ」と言える。
-              </p>
-              <p class="introduction__text">
-                平和とは？私たちには何ができるのか？根源的な「平和」を希求する物語。
-                現代社会を映し出す人間ドラマ対難民問題やヘイトスピーチ問題に見られるように、文化的背景が「異」なるものに対して非寛容になりつつある現代社会。
-              </p>
-              <p class="introduction__text">
-                神の血を引きながらも、現代人同様に欲望や嫉妬によって争う登場人物たちが破滅していく様を描いた「マハーバーラタ」のストーリーは、人類が歩んできた争いの歴史の物語とも言い換えられる。<br />
-                非寛容による悲劇の物語である「マハーバーラタ」を現代社会に重ね合わせつつ描くことで「寛容」の重要性を示す。
+              <?php the_content(); ?>
               </p>
             </div>
           </div>
+          <?php wp_reset_postdata();?>
         </div>
       </section>
       <section class="news js-animation">
