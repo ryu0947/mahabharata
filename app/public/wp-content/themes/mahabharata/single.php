@@ -23,10 +23,9 @@
             </div>
             <div class="page-navi">
               <?php 
-                $next = get_next_post();
                 $prev = get_previous_post();
+                if($prev):
               ?>
-            <?php if($prev): ?>
               <div class="page-navi__item">
                 <a href="<?php echo get_permalink($prev->ID); ?>" class="page-navi__link"> 
                 <img
@@ -35,17 +34,20 @@
                   class="page-navi__img"
                 />
                 <div class="post-prev">
+                <time><?php echo get_the_date('Y.m.d', $prev->ID); ?></time>
                   <p class="post-title"><?php echo $prev->post_title ?></p>
                 </div>
                 </a>
               </div>
-            <?php 
-             endif;
+             <?php endif; ?>
+            <?php
+             $next = get_next_post();
              if($next):
             ?>
               <div class="page-navi__item">
                <a href="<?php echo get_permalink($next->ID); ?>" class="page-navi__link">
                 <div class="post-next">
+                  <time><?php echo get_the_date('Y.m.d', $next->ID); ?></time>
                   <p class="post-title"><?php echo $next->post_title ?></p>
                 </div>
                 <img
@@ -53,10 +55,11 @@
                   alt="次へ"
                   class="page-navi__img"
                 />
-              </div>
-              </a>
+               </a>
+             </div>
+             <?php endif; ?>
             </div>
-            <?php endif; ?>
+           </div>
           <?php 
              endwhile;
             endif;
