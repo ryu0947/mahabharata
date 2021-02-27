@@ -87,20 +87,14 @@
             <?php the_content(); ?>
           </div>
           <?php wp_reset_postdata();?>
-          <div class="comments__inner">
+          <div class="comments__inner" style="background: url(<?php the_field('top-comments-img', 23); ?>)no-repeat 75% center / cover;">
             <div class="comments__text-area">
-              <h3 class="comments__heading">
-                京都佛立ミュージアム館長<br />京都・長松寺/横浜・妙深寺<br
-                  class="sp"
-                />住職
-                <strong class="comments__strong">長松清潤</strong>
+            <h3 class="comments__heading">
+              <?php the_field('representative-job', 23); ?><br class="sp" />
+                <strong class="comments__strong"><?php the_field('representative-name', 23); ?></strong>
               </h3>
               <p class="comments__text">
-                「文に非ず、其の義に非ず、唯だ一部の意のみ。」<br />
-                まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み<br />
-                出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。<br />
-                仏教の奥義と小池作品が通底して見えるのは何故か。<br />
-                40年に及ぶ創作活動で到達した究極の舞台が普遍の題材により現出されようとしている。<br />
+                <?php the_field('top-comments', 23); ?>
               </p>
               <div class="btn-position--comments">
                 <button class="comments__btn">
