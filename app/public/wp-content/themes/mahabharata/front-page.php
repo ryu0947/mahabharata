@@ -77,10 +77,16 @@
       </section>
       <section class="comments js-animation">
         <div class="container outer">
-          <h2 class="comments__title">COMMENTS</h2>
-          <p class="comments__caption">
-            舞台関係者のみならず各界著名人からコメントが届いています！
-          </p>
+        <?php 
+            $comments_obj = get_page_by_path('comments'); 
+            $post = $comments_obj;
+            setup_postdata($post);
+          ?>
+          <h2 class="comments__title"><?php the_title(); ?></h2>
+          <div class="comments__caption">
+            <?php the_content(); ?>
+          </div>
+          <?php wp_reset_postdata();?>
           <div class="comments__inner">
             <div class="comments__text-area">
               <h3 class="comments__heading">
