@@ -2,7 +2,8 @@
     <main>
       <section class="news js-animation">
         <div class="container outer">
-          <h2 class="news__title">NEWS</h2>
+        <?php $news_term = get_term_by('slug', 'news', 'category'); ?>
+          <h2 class="news__title"><?php echo $news_term->name; ?></h2>
           <div class="news__list">
             <?php 
               if(have_posts()): 
