@@ -22,26 +22,29 @@
             </div>
           </div>
         </div>
-      <?php 
-        if(!get_post_meta(23, 'comments', true)):
-      ?>
         <ul class="comments__list">
           <?php
           $comments_group = SCF::get('comments');
           foreach ($comments_group as $comments) :
+            $name = get_post_meta(23, $comments['comments-name'], true);
+            $job = get_post_meta(23, $comments['comments-job'], true);
+            $text = get_post_meta(23, $comments['comments-text'], true);
+            if (empty($name && $job && $text)) :
+            ?>
+              <li class="comments__item">
+                <div class="comments__info">
+                  <h3 class="comments__name"><?php echo $comments['comments-name']; ?></h3>
+                  <p class="comments__job"><?php echo $comments['comments-job']; ?></p>
+                </div>
+                <p class="comments__text--black">
+                  <?php echo $comments['comments-text']; ?>
+                </p>
+              </li>
+          <?php
+           endif;
+          endforeach;
           ?>
-            <li class="comments__item">
-              <div class="comments__info">
-                <h3 class="comments__name"><?php echo $comments['comments-name']; ?></h3>
-                <p class="comments__job"><?php echo $comments['comments-job']; ?></p>
-              </div>
-              <p class="comments__text--black">
-                <?php echo $comments['comments-text']; ?>
-              </p>
-            </li>
-          <?php endforeach; ?>
         </ul>
-      <?php endif; ?>
       </div>
     </section>
     <?php get_footer(); ?>
