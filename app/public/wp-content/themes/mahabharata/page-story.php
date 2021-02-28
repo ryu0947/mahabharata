@@ -8,6 +8,11 @@
         $img2 = wp_get_attachment_image_src($filed['synopsis-img2'], 'full');
         $img3 = wp_get_attachment_image_src($filed['synopsis-img3'], 'full');
       ?>
+      <?php 
+      $img_filed = get_post_meta(44, 'synopsis-img1', true);
+      $text_filed = get_post_meta(44, 'synopsis-text1', true);
+      if($img_filed && $text_filed): 
+      ?>
         <article class="synopsis js-animation" style="background: url(<?php echo $img1[0]; ?>)no-repeat center/cover;">
           <div class="container">
             <div class="synopsis__left">
@@ -17,6 +22,7 @@
             </div>
           </div>
         </article>
+        <?php endif; ?>
         <article class="js-animation" style="background: url(<?php echo $img2[0]; ?>)no-repeat center/cover;">
           <div class="container">
             <div class="synopsis__right">
