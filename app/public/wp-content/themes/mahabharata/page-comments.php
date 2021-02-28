@@ -22,6 +22,9 @@
             </div>
           </div>
         </div>
+      <?php 
+        if(!get_post_meta(23, 'comments', true)):
+      ?>
         <ul class="comments__list">
           <?php
           $comments_group = SCF::get('comments');
@@ -38,6 +41,7 @@
             </li>
           <?php endforeach; ?>
         </ul>
+      <?php endif; ?>
       </div>
     </section>
     <?php get_footer(); ?>
