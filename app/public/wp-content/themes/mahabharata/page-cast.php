@@ -44,6 +44,12 @@
             $subCast_group = SCF::get("sub-cast");
             foreach ($subCast_group as $subCast) :
               $img = wp_get_attachment_image_src($subCast['sub-cast-img'], 'full');
+              $name = get_post_meta(19, $cast['cast-name'], true);
+              $part = get_post_meta(19, $cast['cast-part'], true);
+              $job = get_post_meta(19, $cast['cast-job'], true);
+              $intro = get_post_meta(19, $cast['cast-intro'], true);
+
+              if (empty($img && $name && $part && $job && $intro)) :
             ?>
               <li class="cast__sub-item">
                 <img src="<?php echo $img[0]; ?>" alt="<?php echo $subCast['sub-cast-name']; ?>" class="cast__sub-img" />
@@ -58,7 +64,9 @@
                   </p>
                 </div>
               </li>
-            <?php endforeach; ?>
+            <?php 
+           endif;
+          endforeach; ?>
           </ul>
         </div>
       </div>
