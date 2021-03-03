@@ -190,6 +190,7 @@ textarea {
 @media (min-width: 768px) {
   .cast__list {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -925,6 +926,7 @@ textarea {
 @media (min-width: 768px) {
   .news__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px 30px;
   }
