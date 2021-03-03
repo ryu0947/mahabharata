@@ -76,6 +76,11 @@
             <?php
             $credit_group = SCF::get("credit");
             foreach ($credit_group as $credit) :
+              $part = get_post_meta(19, $cast['cast-part'], true);
+              $name = get_post_meta(19, $cast['cast-name'], true);
+              $job = get_post_meta(19, $cast['cast-job'], true);
+
+              if(empty($part && $name && $job)):
             ?>
               <li class="cast__text-item">
                 <div class="cast__item-inner">
@@ -88,7 +93,9 @@
                   </div>
                 </div>
               </li>
-            <?php endforeach; ?>
+            <?php 
+             endif;
+           endforeach; ?>
           </ul>
         </div>
       </div>
