@@ -12,7 +12,6 @@
           <h3 class="introduction__lead">なぜ今「マハーバーラタ」なのか？</h3>
           <div class="introduction__column">
             <?php echo $content ?>
-            </p>
           </div>
         </div>
       </div>
