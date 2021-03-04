@@ -1,7 +1,6 @@
 jQuery(function ($) {
+  const target = $(".js-animation");
   $(window).on("scroll", function () {
-    const target = $(".js-animation");
-
     $(target).each(function () {
       const scroll = $(window).scrollTop();
       const winHeight = $(window).height();
