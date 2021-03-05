@@ -3,6 +3,7 @@ function add_file()
 {
   wp_enqueue_style('styles', get_template_directory_uri() . '/css/styles.css');
   wp_enqueue_script('scroll-animation', get_template_directory_uri() . '/js/scroll-animation.js', array('jquery'), false, true);
+  wp_enqueue_script('throttle_debounce', get_template_directory_uri() . '/js/jquery.ba-throttle-debounce.min.js', array('jquery'), false, true);
 }
 
 add_action('wp_enqueue_scripts', 'add_file');
