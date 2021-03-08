@@ -13,3 +13,6 @@ app/public/wp-content/themes/*
 
 # node_modules除外
 node_modules/
+
+# scssフォルダ除外
+scss/
