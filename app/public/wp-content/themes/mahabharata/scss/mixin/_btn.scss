@@ -1,0 +1,30 @@
+@import "../variable/variable";
+
+@mixin btn($width, $height, $bg-color: $color-red) {
+  background: $bg-color;
+  width: $width;
+  height: $height;
+  text-align: center;
+  color: $color-white;
+  font-size: $font-size12;
+  font-weight: 700;
+  user-select: none;
+  transition: $transition-color;
+
+  &:hover {
+    background: rgba($color: $color-red, $alpha: 0.8);
+  }
+}
+
+.btn-position {
+  text-align: right;
+
+  &--story, &--comments {
+    text-align: center;
+    margin-top: 1em;
+
+    @include tablet {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import "../variable/variable";
+
+@mixin title($size: $font-size34, $color: $color-black) {
+  font-size: $size;
+  color: $color;
+}

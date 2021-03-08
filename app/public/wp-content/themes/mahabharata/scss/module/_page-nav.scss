@@ -1,0 +1,48 @@
+.wp-pagenavi {
+    & span, & a {
+        border: 2px solid #000000;
+        padding: 5px 10px;
+        margin-right: 10px;
+        color: #000000;
+        font-weight: bold;
+
+      &:last-child {
+          margin-right: 0;
+      }
+
+      &.current {
+          background: #000000;
+          color: #F4D102;
+      }
+    }
+}
+
+.page-navi {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 60px;
+  
+    &__item, &__link {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item:nth-of-type(2) {
+        margin-left: auto;
+    }
+
+    &__img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  .post-next {
+    text-align: right;
+    margin-right: 12px;
+  }
+  
+  .post-prev {
+    text-align: left;
+    margin-left: 12px;
+  }

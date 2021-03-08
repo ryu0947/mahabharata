@@ -1,0 +1,142 @@
+.news {
+  &__title {
+    @include title();
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @include text($size: $font-size16, $weight: 700);
+  }
+
+  &__list {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 -15px 30px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    transition: $transition-opacity;
+
+    @include tablet {
+      max-width: 33.3%;
+      padding: 0 15px;
+
+      &:hover {
+        opacity: $opacity-hover;
+      }
+    }
+
+    &-inner {
+      height: 100%;
+      box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.1);
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .top &:nth-child(4),
+    .top &:nth-child(5) {
+      @include tablet {
+        max-width: 50%;
+      }
+    }
+
+    .top &:nth-child(4) &-inner,
+    .top &:nth-child(5) &-inner {
+      @include tablet {
+        flex-direction: row;
+      }
+    }
+
+    .top &:nth-child(4) &-inner .news__img,
+    .top &:nth-child(5) &-inner .news__img {
+      @include tablet {
+        width: 42%;
+        display: flex;
+      }
+    }
+
+    .top &:nth-child(4) &-inner .news__content,
+    .top &:nth-child(5) &-inner .news__content {
+      @include tablet {
+        width: 58%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__content {
+    padding: 1em;
+    text-align: left;
+    height: 100%;
+    background: $color-white;
+  }
+
+  &__time {
+    @include text($font-size14, $color-gray);
+  }
+
+  &__btn {
+    @include btn($width: 120px, $height: 40px);
+
+    @include tablet {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &-article__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  &-article__head {
+    color: $color-white;
+    text-align: left;
+    background: $color-black;
+    padding: 1em;
+  }
+
+  &-article__head-title {
+    @include title($font-size24, $color-white);
+  }
+
+  &-article__lead {
+    @include title($font-size18);
+    margin-bottom: 10px;
+    font-weight: 700;
+
+    @include tablet {
+      @include title($font-size24);
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 2em;
+    }
+  }
+
+  &-article__body {
+    background: #fef9e6;
+    padding: 30px;
+    text-align: justify;
+
+    & p {
+      @include text();
+      margin-bottom: 2em;
+    }
+
+    & h4 {
+      @include title($font-size18);
+      margin-bottom: 1em;
+    }
+  }
+}

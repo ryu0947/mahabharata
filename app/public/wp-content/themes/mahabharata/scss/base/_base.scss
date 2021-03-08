@@ -1,0 +1,47 @@
+@import "../variable/variable";
+
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  color: $color-black;
+  background: url("../images/back.jpg");
+}
+
+.container {
+  padding: 0 15px;
+
+  @include tablet {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @include mobile-pc {
+    max-width: 960px;
+  }
+
+  @include pc {
+    max-width: 1140px;
+  }
+}
+
+.outer {
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+
+  &.story {
+    margin-top: -60px;
+  }
+}
+
+.sp {
+  @include tablet {
+    display: none;
+  }
+}
+
+.js-animation {
+  @include animation();
+}

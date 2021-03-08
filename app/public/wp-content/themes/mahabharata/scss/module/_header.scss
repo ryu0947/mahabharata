@@ -1,0 +1,261 @@
+.header {
+  margin-bottom: 60px;
+}
+
+.nav {
+  &__list {
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 1em;
+    transition: $transition-opacity;
+    @include text($font-size16, $weight: 700);
+
+    @include pc {
+      @include text($font-size12, $weight: 700);
+    }
+
+    .en {
+      display: none;
+
+      @include pc {
+        display: block;
+        @include text($font-size24, $weight: 700);
+      }
+    }
+
+    &:hover {
+      opacity: $opacity-hover;
+    }
+  }
+}
+
+.fv {
+  position: relative;
+  background: url("../images/header.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+
+  &::before {
+    @include mask();
+  }
+
+  &-child {
+    position: relative;
+    background: url("../images/header.jpg") no-repeat center/cover;
+
+    &.story {
+      position: relative;
+      background: url("../images/story.jpg") no-repeat center/cover;
+
+      &::before {
+        @include mask();
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    text-align: center;
+    padding: 45px 0;
+    z-index: 1;
+  }
+
+  &-child__inner {
+    @extend .fv__inner;
+    padding: 35px 0 0;
+  }
+
+  &__desc {
+    @include text($font-size10, $color-white);
+    font-family: "Noto Serif JP", serif;
+
+    @include sp {
+      @include text($font-size12, $color-white);
+    }
+
+    @include tablet {
+      @include text($font-size24, $color-white);
+    }
+
+    @include mobile-pc {
+      @include text($font-size34, $color-white);
+    }
+  }
+
+  &-child__desc {
+    @include text($font-size10, $color-white);
+    font-family: "Noto Serif JP", serif;
+
+    @include sp {
+      @include text($font-size12, $color-white);
+    }
+
+    @include tablet {
+      @include text($font-size18, $color-white);
+    }
+
+    @include mobile-pc {
+      @include text($font-size24, $color-white);
+    }
+
+    @include pc {
+      @include text($font-size28, $color-white);
+    }
+  }
+
+  &__title {
+    @include title($font-size28, $color-white);
+    font-family: "Noto Serif JP", serif;
+
+    @include sp {
+      @include title($font-size34, $color-white);
+    }
+
+    @include tablet {
+      @include title($font-size68, $color-white);
+    }
+
+    @include mobile-pc {
+      @include title($font-size92, $color-white);
+    }
+
+    @include pc {
+      @include title($font-size98, $color-white);
+    }
+  }
+
+  &-child__title {
+    @include title($font-size28, $color-white);
+    font-family: "Noto Serif JP", serif;
+
+    @include sp {
+      @include title($font-size34, $color-white);
+    }
+
+    @include tablet {
+      @include title($font-size46, $color-white);
+    }
+
+    @include mobile-pc {
+      @include title($font-size64, $color-white);
+    }
+
+    @include pc {
+      @include title($font-size74, $color-white);
+    }
+  }
+
+  &__flex {
+    display: block;
+
+    @include tablet {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
+  &-child__flex {
+    @extend .fv__flex;
+  }
+
+  &__row {
+    margin-top: 30px;
+
+    @include tablet {
+      width: 42%;
+    }
+  }
+
+  &-child__row {
+    margin-bottom: 18px;
+
+    @include tablet {
+      align-self: center;
+    }
+  }
+
+  &__info {
+    @include text($font-size24, $color-white);
+    font-family: "Noto Serif JP", serif;
+
+    @include sp {
+      @include text($font-size28, $color-white);
+    }
+
+    @include mobile-pc {
+      @include text($font-size40, $color-white);
+    }
+  }
+
+  &-child__info {
+    @include text($font-size24, $color-white);
+    font-family: "Noto Serif JP", serif;
+
+    @include sp {
+      @include text($font-size28, $color-white);
+    }
+
+    @include tablet {
+      @include text($font-size18, $color-white);
+    }
+
+    @include mobile-pc {
+      @include text($font-size24, $color-white);
+    }
+
+    @include pc {
+      @include text($font-size28, $color-white);
+    }
+  }
+
+  &__text {
+    color: $color-white;
+    text-align: justify;
+  }
+
+  &__btn {
+    transform: translateY(-50%);
+    @include btn($width: 180px, $height: 40px);
+  }
+
+  &-child__btn {
+    transform: translateY(50%);
+    @include btn($width: 180px, $height: 40px);
+
+    &--story {
+      transform: translateY(20%);
+      @include btn($width: 180px, $height: 40px);
+
+      @include tablet {
+        transform: translateY(-25%);
+      }
+    }
+  }
+
+  &-child__intro {
+    padding: 55px 0;
+  }
+
+  &-child__heading {
+    @include title($color: $color-white);
+    margin-bottom: 54px;
+  }
+
+  &-child__lead {
+    text-align: justify;
+    @include text($color: $color-white);
+
+    @include tablet {
+      margin-left: 50%;
+    }
+  }
+}

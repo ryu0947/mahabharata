@@ -1,0 +1,220 @@
+@import "variable/**";
+@import "mixin/**";
+@import "base/**";
+@import "module/**";
+
+.introduction {
+  &__inner {
+    background: rgba($color: hsl(0, 0%, 100%), $alpha: 0.3)
+      url(../images/intro.png) no-repeat left top/ 30%;
+
+    padding: 20px;
+
+    @include tablet {
+      background-size: 210px;
+      padding: 48px;
+    }
+  }
+
+  &__title {
+    @include title($font-size24);
+    margin-bottom: 16px;
+
+    @include tablet() {
+      @include title();
+    }
+  }
+
+  &__lead {
+    @include title(15px);
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    @include sp {
+      @include title($font-size18);
+    }
+
+    @include tablet {
+      @include title($font-size24);
+      margin-bottom: 30px;
+    }
+  }
+
+  &__column {
+    text-align: justify;
+
+    @include tablet {
+      columns: 2;
+      column-gap: 2em;
+    }
+  }
+
+  & p {
+    @include text();
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+}
+
+.story {
+  &__bg {
+    background: url("../images/story.jpg") no-repeat center/cover;
+  }
+
+  &__title {
+    @include title($color: $color-white);
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    padding: 30px 0 50px;
+  }
+
+  &__text-area {
+    text-align: justify;
+
+    @include tablet {
+      margin-left: 60%;
+    }
+    
+    & p {
+      @include text($color: $color-white);
+  
+      &:not(:first-child) {
+        margin-top: 1em;
+      }
+    }
+  }
+
+
+  &__btn {
+    @include btn($width: 120px, $height: 40px);
+  }
+}
+
+.synopsis {
+  &__left {
+    padding: 45px 0;
+
+    @include tablet {
+      margin-right: 50%;
+      padding: 40px 0;
+    }
+    @include mobile-pc {
+      padding: 60px 0;
+    }
+  }
+  &__right {
+    padding: 45px 0;
+
+    @include tablet {
+      margin-left: 50%;
+      padding: 40px 0;
+    }
+    @include mobile-pc {
+      padding: 60px 0;
+    }
+  }
+  &__text {
+    text-align: justify;
+    @include text($color: $color-white);
+  }
+}
+
+.inquiry {
+  &__inner {
+    background: rgba($color: hsl(0, 0%, 100%), $alpha: 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    text-align: justify;
+
+    @include tablet {
+      padding: 40px;
+    }
+
+    & p {
+      @include text();
+      margin-bottom: 1em;
+    }
+  }
+
+  &__center {
+    text-align: center;
+
+    & p {
+      @include text();
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    @include title();
+    margin-bottom: 24px;
+  }
+}
+
+.form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    margin-bottom: 20px;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    @include text($weight: 700);
+    margin-right: 12px;
+    text-align: left;
+
+    @include tablet {
+      width: 25%;
+      text-align: right;
+    }
+  }
+
+  &__area {
+    background: rgba($color: hsl(0, 0%, 100%), $alpha: 0.7);
+
+    @include tablet {
+      width: 75%;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 7px;
+  }
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+input[type="submit"] {
+  @include btn(120px, 40px);
+}
+
+.error {
+  &__title {
+    @include title();
+    margin-bottom: 1em;
+  }
+  &__text {
+    @include text();
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

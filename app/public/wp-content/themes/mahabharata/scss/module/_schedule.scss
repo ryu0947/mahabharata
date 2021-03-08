@@ -1,0 +1,64 @@
+@import "../variable/variable";
+
+.schedule {
+  &__inner {
+    background: rgba($color: hsl(0, 0%, 100%), $alpha: 0.3);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include title();
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__item {
+    text-align: left;
+    margin-bottom: 30px;
+    @include tablet {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    display: block;
+    @include text($font-size18);
+    @include tablet {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      @include tablet {
+        margin-right: 20px;
+      }
+    }
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+
+  &__btn {
+    @include btn(193px, 60px);
+
+    &--brown {
+      @include btn(193px, 60px, $color-brown);
+      margin-bottom: 20px;
+
+      @include tablet {
+          margin: 0 20px 0 0;
+      }
+    }
+  }
+}

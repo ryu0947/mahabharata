@@ -1,0 +1,116 @@
+@import "../variable/variable";
+
+.comments {
+  &__title {
+    @include title();
+    margin-bottom: 20px;
+  }
+
+  &__caption {
+    @include text($font-size24, $weight: 700);
+  }
+
+  &__inner {
+    position: relative;
+    margin: 20px 0;
+
+    @include tablet {
+      background-position-x: center;
+    }
+
+    &::before {
+      @include mask(0.2);
+    }
+  }
+
+  &__text-area {
+    position: relative;
+    text-align: justify;
+    z-index: 1;
+    padding: 30px;
+
+    @include tablet {
+      padding: 60px;
+    }
+  }
+
+  &__heading {
+    @include title(20px, $color-white);
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  &__text {
+    @include text($color: $color-white);
+
+    @include tablet {
+      padding-right: 40%;
+    }
+
+    @include pc {
+      padding-right: 30%;
+    }
+
+    &--black {
+      @include text();
+      text-align: justify;
+    }
+  }
+
+  &__strong {
+    margin-left: 8px;
+    @include title($font-size34, $color-white);
+  }
+
+  &__btn {
+    @include btn($width: 120px, $height: 40px);
+
+    @include tablet {
+      transform: translate(30%, 50%);
+    }
+  }
+
+  &__list {
+    display: block;
+    margin-top: 30px;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @include tablet {
+      width: 33.3%;
+      padding: 0 15px;
+    }
+
+    &:nth-child(10),
+    &:nth-child(11),
+    &:nth-child(12) {
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-child(12) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    @include text($font-size24, $weight: 700);
+    margin-bottom: 8px;
+  }
+
+  &__job {
+    @include text($font-size12, $color: $color-gray);
+  }
+}

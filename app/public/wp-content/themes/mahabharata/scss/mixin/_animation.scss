@@ -1,0 +1,12 @@
+@import "../variable/variable";
+
+@mixin animation {
+  opacity: 0;
+  transition: $transition-animation;
+  transform: translateY(50px);
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
